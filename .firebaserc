@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "ifest-f9794"
-  }
+  },
+  "targets": {
+    "ifest-f9794": {
+      "hosting": {
+        "i-fest12": [
+          "i-fest12"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

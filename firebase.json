@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "i-fest12",
     "public": "dist",
     "ignore": [
       "firebase.json",

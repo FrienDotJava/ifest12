@@ -1,0 +1,15 @@
+.bg-awan {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/013/442/187/small/illustration-of-pixel-cloud-icon-png.png");
+  animation: movement 20s linear infinite;
+}
+
+@keyframes movement {
+  0% {
+    background-position: -700px 0px;
+  }
+  100% {
+    background-position: 1500px 0px;
+  }
+}
