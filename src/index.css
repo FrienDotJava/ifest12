@@ -21,3 +21,24 @@
   font-family: "Montserrat";
   src: url("/fonts/Montserrat.ttf") format("truetype");
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #59aff6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e6cac;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

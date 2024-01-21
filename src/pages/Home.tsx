@@ -2,6 +2,7 @@ import { FC } from "react";
 
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import Transition from "../components/Transition";
 
 import './awan.css';
 const Home: FC = () => {
@@ -11,7 +12,7 @@ const Home: FC = () => {
   //   "fg":"#275979"
   // }
   return (
-    <div>
+    <Transition>
       <NavBar bg1="#88B7DD" bg2="#2D678C" fg="#275979"/>
       <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]">
         <div className="flex flex-col justify-center items-center h-screen">
@@ -85,7 +86,7 @@ const Home: FC = () => {
         </div>
       </div>
       <Footer className="bg-[#003150]"/>
-    </div>
+    </Transition>
   );
 };
 

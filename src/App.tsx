@@ -10,11 +10,12 @@ import Galeri from "./pages/Galeri";
 import Sponsor from "./pages/Sponsor";
 
 import Error404 from "./pages/Error404";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
   return (
-    <>
+    <AnimatePresence>
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/bcc" element={<BCC />} />
@@ -25,7 +26,7 @@ function App() {
         <Route path="/sponsor" element={<Sponsor />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
-    </>
+    </AnimatePresence>
   )
 }
 

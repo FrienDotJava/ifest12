@@ -50,11 +50,13 @@ const NavListMenu: FC<Color> = (props:Color) => {
   const renderItems = navListMenuItems.map(
     (items , key) => (
       <a href={items.link} key={key}>
-        <MenuItem className={`flex items-center gap-3 rounded-lg hover:bg-[${props.bg2}] hover:text-white`} placeholder={undefined}>
+        <MenuItem className={`flex items-center gap-3 rounded-lg hover:bg-[${props.bg2}] hover:text-white ml-8 lg:ml-0`} placeholder={undefined}>
           <div>
             <Typography
               variant="h6"
-              className="flex items-center text-sm font-bold" placeholder={undefined}            >
+              className="flex items-center text-sm font-bold font-brokenConsole" placeholder={undefined}            
+              style={{color:isMobileMenuOpen ? props.fg : ""}}
+            >
               {items.title}
             </Typography>
           </div>
@@ -104,17 +106,15 @@ const NavListMenu: FC<Color> = (props:Color) => {
           </Typography>
         </MenuHandler>
         <MenuList
-          className="p-0 rounded-xl border-0"
+          className="hidden max-w-screen-xl rounded-xl border-0 shadow-lg lg:block p-0"
           placeholder={undefined}
+          style={{backgroundColor: props.bg1, color:props.fg}}
         >
-          <div
-            className={`hidden max-w-screen-xl rounded-xl border-0 shadow-lg lg:block`} 
-            style={{backgroundColor: props.bg1, color:props.fg}}
-          >
-              <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0 px-6 py-3" >
-                {renderItems}
-              </ul>
-          </div>
+          <ul className="outline-none outline-0" style={{backgroundColor: props.bg1, color:props.fg}}>
+            <div className="grid grid-cols-1 gap-y-2 px-6 py-3">
+              {renderItems}
+            </div>
+          </ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -126,7 +126,7 @@ const NavListMenu: FC<Color> = (props:Color) => {
 
 const NavList: FC<Color> = (props:Color) => {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex lg:flex-row lg:p-1 lg:gap-6" placeholder={undefined}>
+    <List className="mt-4 mb-6 ml-12 p-0 lg:ml-0 lg:mt-0 lg:mb-0 lg:flex lg:flex-row lg:p-1 lg:gap-6" placeholder={undefined}>
       <NavListMenu bg1={props.bg1} bg2={props.bg2} fg={props.fg}/>
       <Typography
         as="a"
@@ -168,20 +168,27 @@ const NavBar: FC<Color> = (props: Color) => {
 
   return (
     <Navbar 
-      className={`fixed top-0 z-10 mx-auto max-w-full rounded-none px-14 py-0 border-none text-xl`} 
+      className={`fixed top-0 z-10 mx-auto max-w-full rounded-none px-0 lg:px-14 py-0 border-none text-xl transition`} 
       placeholder={undefined}
       blurred={false}
       shadow={false}
-      style={{backgroundColor: props.bg1}}
+      style={{
+        backgroundColor: props.bg1, 
+        background: openNav ? props.bg1 : "none", 
+        transitionProperty:"all", 
+        transitionDuration: openNav ? "100ms" : "150ms", 
+        transitionTimingFunction:"cubic-bezier(0.4, 0, 0.2, 1)", 
+        transitionDelay: openNav ? "0ms" : "180ms"}}
+      // style={{background: "none"}}
     >
       <div className="flex items-center justify-between">
         <Typography
           as="a"
           href="/"
           variant="h6"
-          className="mr-4 cursor-pointer lg:ml-2" placeholder={undefined}        
+          className="cursor-pointer ml-12 lg:ml-2" placeholder={undefined}        
         >
-            <img src="images/ifest.png" alt="ifest-logo" className="w-16 hover:scale-125 transition" />
+          <img src="images/ifest.png" alt="ifest-logo" className="w-16 hover:scale-125 transition" />
         </Typography>
         <div className="flex items-center justify-end gap-6">
           <div className="hidden lg:block">
@@ -203,7 +210,7 @@ const NavBar: FC<Color> = (props: Color) => {
         <IconButton
           variant="text"
           color="blue"
-          className={`lg:hidden`}
+          className={`lg:hidden mr-12`}
           style={{color:props.fg}}
           onClick={() => setOpenNav(!openNav)} placeholder={undefined}        
         >
@@ -214,9 +221,9 @@ const NavBar: FC<Color> = (props: Color) => {
           )}
         </IconButton>
       </div>
-      <Collapse open={openNav}>
+      <Collapse className="" open={openNav} style={{backgroundColor: props.bg1}}>
         <NavList bg1={props.bg1} bg2={props.bg2} fg={props.fg}/>
-        <div className="flex w-full mb-8 flex-nowrap items-center gap-2 lg:hidden">
+        <div className="flex w-full ml-12 pl-3 mb-8 flex-nowrap items-center gap-2 lg:hidden">
           <a href="/dash">
             <Button 
               size="lg" 
