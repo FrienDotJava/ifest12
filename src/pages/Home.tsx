@@ -1,19 +1,24 @@
 import { FC } from "react";
 
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 
 import './awan.css';
 const Home: FC = () => {
+  // const details = {
+  //   "bg1":"#88B7DD",
+  //   "bg2":"#2D678C",
+  //   "fg":"#275979"
+  // }
   return (
     <div>
-      <Navbar />
+      <NavBar bg1="#88B7DD" bg2="#2D678C" fg="#275979"/>
       <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]">
         <div className="flex flex-col justify-center items-center h-screen">
           <div className="font-brokenConsole font-bold text-3xl text-white">IFest #12</div>
           <div className="text-8xl">Eternal</div>
           <div className="text-8xl">Technology</div>
-          <div className="mt-12 font-brokenConsole text-white bg-[url('images/pixel-button.png')] bg-contain bg-no-repeat bg-center w-36 h-12 transition-transform hover:scale-125 flex justify-center items-center cursor-pointer">Start</div>
+          <div className="mt-12 font-brokenConsole text-white bg-[url('/images/pixel-button.png')] bg-contain bg-no-repeat bg-center w-36 h-12 transition-transform hover:scale-125 flex justify-center items-center cursor-pointer">Start</div>
         </div>
       </div>
       <div className="flex flex-col justify-start items-center h-screen bg-gradient-to-b from-[#5A99D2] from-40% via-[#A5CAE4] via-70% to-[#DBE9F5]">

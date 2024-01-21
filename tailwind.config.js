@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+import withMT from "@material-tailwind/react/utils/withMT";
+
+export default withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -9,9 +12,13 @@ export default {
       fontFamily: {
         brokenConsole: ["Broken Console", "sans-serif"],
         louisGeorgeCafe: ["Louis George Cafe", "sans-serif"],
+        josefinSans: ["Josefin Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       }
     },
   },
   plugins: [],
-}
+});
+
+
 
