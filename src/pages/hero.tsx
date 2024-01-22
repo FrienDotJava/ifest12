@@ -1,12 +1,12 @@
-import React from 'react';
+import { FC } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import TextBlock from './textBlock.tsx';
+import TextBlock from './Home.tsx';
 
 // import Footer from "../components/Footer";
 // import Navbar from "../components/Navbar";
 
 import './hero.css';
-const Banner: React.FC = () => {
+const Banner: FC = () => {
   return (
     <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]">
         <Parallax pages={2} style={{ top: '0', left: '0' }} className="awan_animation">
