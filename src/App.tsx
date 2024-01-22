@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 
+import Banner from "./pages/hero"
 import Home from "./pages/Home";
 import BCC from "./pages/BCC";
 import WDC from "./pages/WDC";
@@ -16,7 +17,8 @@ function App() {
   return (
     <>
       <Routes key={location.pathname} location={location}>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Banner />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/bcc" element={<BCC />} />
         <Route path="/wdc" element={<WDC />} />
         <Route path="/muc" element={<MUC />} />
