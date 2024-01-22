@@ -1,10 +1,7 @@
 import { FC } from "react";
 
 const WDC: FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default WDC;

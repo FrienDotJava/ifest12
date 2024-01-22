@@ -1,10 +1,7 @@
 import { FC } from "react";
 
 const BCC: FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default BCC;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const Hamburger: FC = () => {
-  return(
+  return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="52"
@@ -38,7 +38,6 @@ const Hamburger: FC = () => {
         />
       </g>
     </svg>
-
   );
 };
 

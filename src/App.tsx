@@ -26,7 +26,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

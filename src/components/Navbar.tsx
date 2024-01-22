@@ -9,24 +9,28 @@ import "./Navbar.css";
 // }
 
 // const Navbar:FC<Props> = ({ className }: Props) => {
-const Navbar:FC = () => {
+const Navbar: FC = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
-  return(
+  return (
     <>
       <nav className="navbar ">
         <div className="container">
           <div className="logo flex items-center gap-10">
             <img src="images/ifest.png" alt="ifest-logo" className="w-12" />
-            <div className="font-brokenConsole text-white text-2xl">IFest #12</div>
+            <div className="font-brokenConsole text-white text-2xl">
+              IFest #12
+            </div>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
           </div>
-          <div className={`nav-elements  ${showNavbar && "active"} font-louisGeorgeCafe`}>
+          <div
+            className={`nav-elements  ${showNavbar && "active"} font-louisGeorgeCafe`}
+          >
             <ul>
               <li>
                 <NavLink to="/">Home</NavLink>

@@ -1,10 +1,7 @@
 import { FC } from "react";
 
 const Sponsor: FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default Sponsor;
