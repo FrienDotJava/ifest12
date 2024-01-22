@@ -1,20 +1,42 @@
 import { FC } from "react";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 import './awan.css';
+import './hero.css'
 const Home: FC = () => {
   return (
     <div>
       <Navbar />
       <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]">
-        <div className="flex flex-col justify-center items-center h-screen">
-          <div className="font-brokenConsole font-bold text-3xl text-white">IFest #12</div>
-          <div className="text-8xl">Eternal</div>
-          <div className="text-8xl">Technology</div>
-          <div className="mt-12 font-brokenConsole text-white bg-[url('images/pixel-button.png')] bg-contain bg-no-repeat bg-center w-36 h-12 transition-transform hover:scale-125 flex justify-center items-center cursor-pointer">Start</div>
-        </div>
+        <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]">
+          <Parallax pages={2} style={{ top: '0', left: '0' }} className="awan_animation">
+              <ParallaxLayer offset={0} speed={0.2}>
+                  <div className="awan_animation_layer parallax" id="awan1"> </div>
+              </ParallaxLayer>
+              <ParallaxLayer offset={0} speed={0.3}>
+                  <div className="awan_animation_layer parallax" id="awan2"> </div>
+              </ParallaxLayer>
+              <ParallaxLayer offset={0} speed={-0.1}>
+                  <div className="awan_animation_layer parallax" id="awan3"> </div>
+              </ParallaxLayer>
+              <ParallaxLayer offset={0} speed={0.35}>
+                <div className="awan_animation_layer parallax" id="awan4"> </div>
+              </ParallaxLayer> 
+              <ParallaxLayer offset={0} speed={0.45}>
+                  <div className="awan_animation_layer parallax" id="awan5"> </div>
+              </ParallaxLayer>
+              <div className="flex flex-col justify-center items-center h-screen">
+                  <ParallaxLayer offset={0} speed={0.45}>
+                      <img src='images/eternal-technology-title.png'></img>
+                  </ParallaxLayer>
+                  <div className="awan_animation_layer parallax flex flex-col justify-center items-center h-screen font-brokenConsole font-bold text-3xl text-white">IFest #12</div>
+                  <div className="awan_animation_layer parallax mt-12 font-brokenConsole text-white bg-[url('images/pixel-button.png')] bg-contain bg-no-repeat bg-center w-36 h-12 transition-transform hover:scale-125 flex justify-center items-center cursor-pointer id='awan">Start</div>
+              </div>
+          </Parallax>
+      </div>
       </div>
       <div className="flex flex-col justify-start items-center h-screen bg-gradient-to-b from-[#5A99D2] from-40% via-[#A5CAE4] via-70% to-[#DBE9F5]">
         <div className="mt-12 font-brokenConsole font-bold text-3xl text-white">About IFest #12</div>
