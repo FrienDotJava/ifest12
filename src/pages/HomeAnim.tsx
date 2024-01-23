@@ -1,13 +1,11 @@
 import { FC } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
-import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 import slide_image_1 from "./images/picture-carousel/image1.png";
 import slide_image_2 from "./images/picture-carousel/image2.png";
