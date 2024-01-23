@@ -1,46 +1,3 @@
-#textblock {
-  background-color: #210002;
-  height: 100vh;
-}
-
-#textblock-container {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-#textblock-title {
-  color: #ffaf1b;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: "Helvetica Neue";
-}
-
-#textblock-content {
-  color: #ffaf1b;
-  font-size: 20px;
-}
-
-#textblock-footer {
-  color: #ffaf1b;
-  font-size: 15px;
-  font-weight: 400;
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#textblock-devsense {
-  text-decoration: none;
-  color: #ffaf1b;
-  font-size: 15px;
-  font-weight: 600;
-}
-
 .awan_animation,
 .awan_animation_layer {
   height: 1000px;
@@ -61,6 +18,11 @@
   position: absolute;
 }
 
+.flex {
+  align-items: center;
+  display: flex;
+}
+
 .awan_animation_layer.parallax {
   position: fixed;
 }
@@ -68,7 +30,7 @@
 #title {
   background-image: url(./images/eternal-technology-title.png);
   position: relative;
-  top: -70px;
+  top: -90px;
 }
 
 #awan1 {
