@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 
-import Home from "./pages/Home";
+import Home from "./pages/HomeAnim";
 import BCC from "./pages/BCC";
 import WDC from "./pages/WDC";
 import MUC from "./pages/MUC";
