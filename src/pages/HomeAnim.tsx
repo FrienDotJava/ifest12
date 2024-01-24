@@ -1,17 +1,14 @@
 import { FC } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
+import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import slide_image_1 from "./images/picture-carousel/image1.png";
-import slide_image_2 from "./images/picture-carousel/image2.png";
-import slide_image_3 from "./images/picture-carousel/image2.png";
-import slide_image_4 from "./images/picture-carousel/image2.png";
-import slide_image_5 from "./images/picture-carousel/image2.png";
+// import slide_image_1 from "./images/picture-carousel/image1.png"
 
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -21,7 +18,6 @@ import "./Home.css";
 const Home: FC = () => {
   return (
     <div>
-      {/* <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]"> */}
       <Parallax className="awan_animation">
         <Navbar />
         <div className="h-screen bg-gradient-to-b from-[#A5CAE4] via-[#88B7DD] to-[#5A99D2]">
@@ -87,63 +83,14 @@ const Home: FC = () => {
           </div>
         </ParallaxLayer>
         <div className="flex flex-col justify-start items-center h-screen bg-gradient-to-b from-[#5A99D2] to-[#DBE9F5]">
-          <div className="mt-12 flex  flex-row justify-center items-center gap-4">
+          <div className="mt-12 flex flex-row justify-center items-center gap-4">
             <img src="images/star.png" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-3xl text-white">
               About IFest #12
             </div>
             <img src="images/star.png" alt="star-img" className="w-12" />
-            <div className="container">
-              <h1 className="heading">Galeri Foto</h1>
-              <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView={"auto"}
-                coverflowEffect={{
-                  rotate: 0,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 2.5,
-                }}
-                pagination={{ el: ".swiper-pagination", clickable: true }}
-                navigation={{
-                  nextEl: "swiper-button-next",
-                  prevEl: "swiper-button-prev",
-                  clickable: true,
-                }}
-                modules={[EffectCoverflow, Pagination, Navigation]}
-                className="swiper_container"
-              >
-                <SwiperSlide>
-                  <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={slide_image_2} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={slide_image_3} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={slide_image_4} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={slide_image_5} alt="slide_image" />
-                </SwiperSlide>
-                <div className="slider-controler">
-                  <div className="swiper-button-prev slider-arrow">
-                    <ion-icon name="arrow-back-outline"></ion-icon>
-                  </div>
-                  <div className="swiper-button-prev slider-arrow">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </div>
-                  <div className="swiper-pagination"></div>
-                </div>
-              </Swiper>
-            </div>
           </div>
-          <div className="mt-12 font-louisGeorgeCafe text-white px-20 text-center">
+          <div className="mt-8 font-louisGeorgeCafe text-white px-20 text-center">
             IFEST#12 UAJY stands for Informatics Festival. It is an annual
             festival organized by the Informatics Student Association
             (HIMAFORKA) at Atma Jaya University Yogyakarta. Our team has
@@ -155,13 +102,72 @@ const Home: FC = () => {
             The Future.
           </div>
         </div>
-        <div className="flex flex-col justify-start items-center h-screen bg-[#DBE9F5]">
+        <div className="flex flex-col justify-start h-screen bg-[#DBE9F5]">
           <div className="mt-12 flex flex-row justify-center items-center gap-4">
             <img src="images/star.png" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-3xl text-[#2D678C]">
               BUSINESS CASE COMPETITION
             </div>
             <img src="images/star.png" alt="star-img" className="w-12" />
+          </div>
+          <div className="mt-8 font-louisGeorgeCafe text-white px-20 text-center">
+            IFEST#12 UAJY stands for Informatics Festival. It is an annual
+            festival organized by the Informatics Student Association
+            (HIMAFORKA) at Atma Jaya University Yogyakarta. Our team has
+            developed a website that will serve as a platform to share
+            information with prospective participants about IFest#12 and the
+            registration process for IFest competitions. We handled the entire
+            process, from designing to deploying the website. The theme of this
+            year's Ifest is Eternal Technology : A Symphony from Informatics for
+            The Future.
+          </div>
+          <div className="container">
+            <Swiper
+              className="swiper_container"
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              pagination={{ el: ".swiper-pagination", clickable: true }}
+              navigation={{
+                nextEl: "swiper-button-next",
+                prevEl: "swiper-button-prev",
+              }}
+            >
+              <SwiperSlide>
+                <img src="images/picture-carousel/image1.png" alt="picture1" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="images/picture-carousel/image1.png" alt="picture1" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="images/picture-carousel/image1.png" alt="picture1" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="images/picture-carousel/image1.png" alt="picture1" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="images/picture-carousel/image1.png" alt="picture1" />
+              </SwiperSlide>
+            </Swiper>
+            <div className="slider-controler">
+              <div className="swiper-button-prev slider-arrow">
+                {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
+              </div>
+              <div className="swiper-button-next slider-arrow">
+                {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
+              </div>
+              <div className="swiper-pagination"></div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#DBE9F5]">
