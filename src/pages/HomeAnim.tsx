@@ -110,7 +110,7 @@ const Home: FC = () => {
             </div>
             <img src="images/star.png" alt="star-img" className="w-12" />
           </div>
-          <div className="mt-8 font-louisGeorgeCafe text-white px-20 text-center">
+          <div className="mt-8 font-louisGeorgeCafe text-[#2D678C] px-20 text-center">
             IFEST#12 UAJY stands for Informatics Festival. It is an annual
             festival organized by the Informatics Student Association
             (HIMAFORKA) at Atma Jaya University Yogyakarta. Our team has
@@ -121,7 +121,7 @@ const Home: FC = () => {
             year's Ifest is Eternal Technology : A Symphony from Informatics for
             The Future.
           </div>
-          <div className="container">
+          <div className="container_swiper">
             <Swiper
               className="swiper_container"
               effect={"coverflow"}
@@ -144,30 +144,79 @@ const Home: FC = () => {
               }}
             >
               <SwiperSlide>
-                <img src="images/picture-carousel/image1.png" alt="picture1" />
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="images/picture-carousel/image1.png" alt="picture1" />
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="images/picture-carousel/image1.png" alt="picture1" />
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="images/picture-carousel/image1.png" alt="picture1" />
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="images/picture-carousel/image1.png" alt="picture1" />
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
               </SwiperSlide>
+              <SwiperSlide>
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
+              </SwiperSlide>
+              <SwiperSlide>
+                <figure className="aspect-square">
+                  <img
+                    src="images\picture-carousel\photo-1551415923-a2297c7fda79.webp"
+                    alt="picture"
+                    className="rounded-3xl"
+                  />
+                </figure>
+              </SwiperSlide>
+              <div className="slider-controler">
+                <div className="swiper-button-prev slider-arrow">
+                  {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>
+                <div className="swiper-button-next slider-arrow">
+                  {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
+                </div>
+                <div className="swiper-pagination"></div>
+              </div>
             </Swiper>
-            <div className="slider-controler">
-              <div className="swiper-button-prev slider-arrow">
-                {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
-              </div>
-              <div className="swiper-button-next slider-arrow">
-                {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#DBE9F5]">
