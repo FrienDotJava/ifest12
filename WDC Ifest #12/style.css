@@ -269,6 +269,7 @@ h2 {
 }
                                            
 .wmfont {
+    margin-bottom: 30px;
     color: white;
     display: flex;
     justify-content: center;
@@ -398,6 +399,7 @@ h2 {
     align-items: center;
     margin-top: 100px;
     margin-left: 0px;
+    margin-bottom: 30px;
     font-family: 'inter';
 }
 
@@ -408,6 +410,7 @@ h2 {
     align-items: center;
     margin-top: 100px;
     margin-left: 0px;
+    margin-bottom: 30px;
     font-family: 'inter';
 }
 
@@ -715,6 +718,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-top: 0px;
+    margin-bottom: 30px;
     font-family: 'inter';
     padding-top: 200px;
 }
@@ -802,6 +806,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-top: -100px;
+    margin-bottom: 30px;
     font-family: 'inter';
 }
 
