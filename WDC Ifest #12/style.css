@@ -74,7 +74,7 @@ h2 {
     font-family: 'inter';
     font-weight: bold;
     margin-left: 500px;
-    margin-top: -40px;
+    margin-top: -35px;
 }
 
 .tentang {
@@ -83,7 +83,7 @@ h2 {
     font-weight: bold;
     font-family: 'inter';
     margin-left: 40px;
-    margin-top: -40px;
+    margin-top: -35px;
 }
 
 .acara {
@@ -92,7 +92,7 @@ h2 {
     font-weight: bold;
     font-family: 'inter';
     margin-left: 40px;
-    margin-top: -40px;
+    margin-top: -35px;
 }
 
 .galeri {
@@ -102,7 +102,7 @@ h2 {
     font-family: 'inter';
     margin-left: 40px;
     margin-right: 50px;
-    margin-top: -40px;
+    margin-top: -35px;
 }
 
 .dashfont {
@@ -110,12 +110,13 @@ h2 {
     font-weight: bold;
     color: white;
     font-size: 24px;
-    margin-left: 1100px;
+    margin-left: 1150px;
     margin-right: 50px;
     margin-top: -50px;
     border: 1px solid transparent;
-    border-radius: 20px;
-    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    padding: 10px 0px;
+    width: 200px;
     background: #8637C6;
     text-align: center;
 }
@@ -238,7 +239,27 @@ h2 {
 }
 
 .pabout {
-    padding: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'inter';
+    text-align: center;
+}
+
+.pabout2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'inter';
+    text-align: center;
+    padding-bottom: 100px;
 }
 
                                                     /* section2 */
