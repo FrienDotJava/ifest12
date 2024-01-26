@@ -149,3 +149,15 @@
 .uplift-button {
   margin-top: -30px;
 }
+
+.q-faq {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.answer-faq {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: medium;
+}

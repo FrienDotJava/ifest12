@@ -7,7 +7,7 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
-import Accordion from "../components/accordion";
+import { FaWhatsapp } from "react-icons/fa6";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -72,7 +72,6 @@ const Home: FC = () => {
             </div>
           </ParallaxLayer>
         </div>
-
         <ParallaxLayer
           offset={0.25}
           speed={0.35}
@@ -190,29 +189,31 @@ const Home: FC = () => {
               </div>
             </Swiper>
           </div>
-          <button className="uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
-            View all{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 5 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-10 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </button>
+          <div className="flex justify-center gap-4 uplift-button">
+            <button className="uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
+              View all{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 5 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-10 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="flex flex-col justify-start h-screen bg-[#DBE9F5]">
           <div className="mt-12 flex flex-row justify-center items-center gap-4">
             <img src="images/star.png" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-3xl text-[#2D678C]">
-              BUSINESS CASE COMPETITION
+              INNOVATIVE INFORMATICS CONTEST
             </div>
             <img src="images/star.png" alt="star-img" className="w-12" />
           </div>
@@ -312,23 +313,42 @@ const Home: FC = () => {
               </div>
             </Swiper>
           </div>
-          <button className="uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
-            View all{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 5 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-10 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </button>
+          <div className="flex justify-center gap-4 uplift-button">
+            <button className="flex items-center btn btn-outline btn-secondary rounded-full px-7">
+              View all{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </button>
+            <button className="flex items-center btn btn-primary rounded-full bg-secondary text-white hover:bg-accent px-7">
+              Daftar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#DBE9F5]">
           <div className="mt-12 flex flex-row justify-center items-center gap-4">
@@ -434,23 +454,42 @@ const Home: FC = () => {
               </div>
             </Swiper>
           </div>
-          <button className="uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
-            View all{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 5 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-10 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </button>
+          <div className="flex justify-center gap-4 uplift-button">
+            <button className="flex items-center btn btn-outline btn-secondary rounded-full px-7">
+              View all{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </button>
+            <button className="flex items-center btn btn-primary rounded-full bg-secondary text-white hover:bg-accent px-7">
+              Daftar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#DBE9F5]">
           <div className="mt-12 flex flex-row justify-center items-center gap-4">
@@ -556,23 +595,42 @@ const Home: FC = () => {
               </div>
             </Swiper>
           </div>
-          <button className="uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
-            View all{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 5 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-10 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </button>
+          <div className="flex justify-center gap-4 uplift-button">
+            <button className="flex items-center btn btn-outline btn-secondary rounded-full px-7">
+              View all{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </button>
+            <button className="flex items-center btn btn-primary rounded-full bg-secondary text-white hover:bg-accent px-7">
+              Daftar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#DBE9F5]">
           <div className="mt-12 flex flex-row justify-center items-center gap-4">
@@ -678,23 +736,42 @@ const Home: FC = () => {
               </div>
             </Swiper>
           </div>
-          <button className="uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
-            View all{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 5 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-10 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"
-              />
-            </svg>
-          </button>
+          <div className="flex justify-center gap-4 uplift-button">
+            <button className="flex items-center btn btn-outline btn-secondary rounded-full px-7">
+              View all{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </button>
+            <button className="flex items-center btn btn-primary rounded-full bg-secondary text-white hover:bg-accent px-7">
+              Daftar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="m-auto flex flex-col justify-start items-center h-screen bg-gradient-to-b from-[#DBE9F5] to-[#739AB3] text-center">
           <div className="mt-12 flex flex-row justify-center items-center gap-4">
@@ -762,25 +839,116 @@ const Home: FC = () => {
             </div>
             <img src="images/star.png" alt="star-img" className="w-12" />
           </div>
-          <div className="m-auto font-louisGeorgeCafe text-white px-20 text-center">
-            Terima kasih kepada para sponsor yang sudah membantu kegiatan IFEST
-            #12
+          <div className="q-faq m-4 font-louisGeorgeCafe text-white px-20 text-center">
+            Penasaran dengan IFest#12? Lihat Pertanyaan yang Paling Sering
+            Ditanyakan dan Dapatkan Semua Info yang Kamu Butuhkan!
           </div>
-          <div className="min-h-screen relative p-1 pb-10 bg-purple-100">
-            <section className="relative bg-white transition-all mx-auto  max-w-xs sm:max-w-2xl rounded-lg flex flex-col gap-4 mt-40 sm:mt-24 p-5">
-              <h1 className="flex gap-3 items-center">
-                <img
-                  src="images/star.png"
-                  alt="star-icon"
-                  className=" h-6  w-auto"
+          <div className="gap-4 px-40 mt-10 flex flex-col justify-start items-center h-screen">
+            <div className="collapse collapse-plus bg-white shadow-xl">
+              <input type="radio" name="my-accordion-3" checked={true} />
+              <div className="collapse-title text-xl font-medium bg-[#1F5E86] text-white">
+                Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
+                #12?
+              </div>
+              <div className="collapse-content">
+                <p className="answer-faq text-[#2D678C]">
+                  IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang
+                  kompetisi, termasuk penghargaan uang tunai, kesempatan untuk
+                  berkolaborasi dengan perusahaan terkemuka, dan sertifikat
+                  pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda
+                  raih dan apa manfaatnya untuk karier Anda di dunia teknologi
+                  informasi.
+                </p>
+              </div>
+            </div>
+            <div className="collapse collapse-plus bg-white shadow-xl">
+              <input type="radio" name="my-accordion-3" checked={true} />
+              <div className="collapse-title text-xl font-medium bg-[#1F5E86] text-white">
+                Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
+                #12?
+              </div>
+              <div className="collapse-content">
+                <p className="answer-faq text-[#2D678C]">
+                  IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang
+                  kompetisi, termasuk penghargaan uang tunai, kesempatan untuk
+                  berkolaborasi dengan perusahaan terkemuka, dan sertifikat
+                  pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda
+                  raih dan apa manfaatnya untuk karier Anda di dunia teknologi
+                  informasi.
+                </p>
+              </div>
+            </div>
+            <div className="collapse collapse-plus bg-white shadow-xl">
+              <input type="radio" name="my-accordion-3" checked={true} />
+              <div className="collapse-title text-xl font-medium bg-[#1F5E86] text-white">
+                Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
+                #12?
+              </div>
+              <div className="collapse-content">
+                <p className="answer-faq text-[#2D678C]">
+                  IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang
+                  kompetisi, termasuk penghargaan uang tunai, kesempatan untuk
+                  berkolaborasi dengan perusahaan terkemuka, dan sertifikat
+                  pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda
+                  raih dan apa manfaatnya untuk karier Anda di dunia teknologi
+                  informasi.
+                </p>
+              </div>
+            </div>
+            <div className="collapse collapse-plus bg-white shadow-xl">
+              <input type="radio" name="my-accordion-3" checked={true} />
+              <div className="collapse-title text-xl font-medium bg-[#1F5E86] text-white">
+                Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
+                #12?
+              </div>
+              <div className="collapse-content">
+                <p className="answer-faq text-[#2D678C]">
+                  IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang
+                  kompetisi, termasuk penghargaan uang tunai, kesempatan untuk
+                  berkolaborasi dengan perusahaan terkemuka, dan sertifikat
+                  pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda
+                  raih dan apa manfaatnya untuk karier Anda di dunia teknologi
+                  informasi.
+                </p>
+              </div>
+            </div>
+            <div className="collapse collapse-plus bg-white shadow-xl">
+              <input type="radio" name="my-accordion-3" checked={true} />
+              <div className="collapse-title text-xl font-medium bg-[#1F5E86] text-white">
+                Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
+                #12?
+              </div>
+              <div className="collapse-content">
+                <p className="answer-faq text-[#2D678C] m-2">
+                  IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang
+                  kompetisi, termasuk penghargaan uang tunai, kesempatan untuk
+                  berkolaborasi dengan perusahaan terkemuka, dan sertifikat
+                  pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda
+                  raih dan apa manfaatnya untuk karier Anda di dunia teknologi
+                  informasi.
+                </p>
+              </div>
+            </div>
+            <div className="q-faq m-4 font-louisGeorgeCafe text-white px-20 text-center">
+              Still Have any Question ?
+            </div>
+            <button className="m-2 uplift-button btn btn-wide btn-primary rounded-full bg-secondary text-white hover:bg-accent">
+              Contact us{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
                 />
-                <span className="font-bold text-4xl">FAQs</span>
-                <div className="flex flex-col gap-4">
-                  <Accordion question={""} answer={""} />
-                </div>
-              </h1>
-              <div className="flex flex-col gap-4"></div>
-            </section>
+              </svg>
+            </button>
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-gradient-to-b from-[#3483A2] to-[#85C3DB]">
@@ -790,6 +958,129 @@ const Home: FC = () => {
               CONTACT PERSON
             </div>
             <img src="images/star.png" alt="star-img" className="w-12" />
+          </div>
+          <div className="q-faq m-4 font-louisGeorgeCafe text-white px-20 text-center">
+            Penasaran dengan IFest#12? Lihat Pertanyaan yang Paling Sering
+            Ditanyakan dan Dapatkan Semua Info yang Kamu Butuhkan!
+          </div>
+          <div>
+            <div className=" flex flex-col w-full lg:flex-row">
+              <div className="flex flex-col items-center">
+                <div className="font-brokenConsole font-bold text-xl text-white grid flex-grow h-32 card *:rounded-box place-items-center">
+                  I2C
+                </div>
+                <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                  Innovative Informatics Contest
+                </div>
+                <div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      Alvin
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      087794005230
+                    </button>
+                  </div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      Jeany
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      082151779891
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="divider lg:divider-horizontal"></div>
+              <div className="flex flex-col items-center">
+                <div className="font-brokenConsole font-bold text-xl text-white grid flex-grow h-32 card *:rounded-box place-items-center">
+                  WDC
+                </div>
+                <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                  Web Development Competition
+                </div>
+                <div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      Lisya
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      089503210551
+                    </button>
+                  </div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      Yonatan
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      087753428099
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="divider lg:divider-horizontal"></div>
+              <div className="flex flex-col items-center">
+                <div className="font-brokenConsole font-bold text-xl text-white grid flex-grow h-32 card *:rounded-box place-items-center">
+                  MUC
+                </div>
+                <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                  Mobile UI/UX Competition
+                </div>
+                <div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      John Doe
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      087794005230
+                    </button>
+                  </div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      John Doe
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      082151779891
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="divider lg:divider-horizontal"></div>
+              <div className="flex flex-col items-center">
+                <div className="font-brokenConsole font-bold text-xl text-white grid flex-grow h-32 card *:rounded-box place-items-center">
+                  SEMNAS
+                </div>
+                <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                  Seminar Nasional
+                </div>
+                <div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      John Doe
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      087794005230
+                    </button>
+                  </div>
+                  <div>
+                    <div className="q-faq font-louisGeorgeCafe text-white px-20 text-center">
+                      John Doe
+                    </div>
+                    <button className="flex items-center btn btn-primary rounded-full bg-[#5ECC85] text-white hover:bg-accent px-7">
+                      <FaWhatsapp style={{ fontSize: "30px" }} />
+                      082151779891
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <Footer className="bg-[#003150]" />
