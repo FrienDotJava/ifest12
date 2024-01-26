@@ -1,10 +1,7 @@
 import { FC } from "react";
 
 const MUC: FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default MUC;

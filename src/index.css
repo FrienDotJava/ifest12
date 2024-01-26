@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 @font-face {
   font-family: "Broken Console";
@@ -10,35 +12,4 @@
 @font-face {
   font-family: "Louis George Cafe";
   src: url("/fonts/Louis George Cafe.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("/fonts/Josefin Sans.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat.ttf") format("truetype");
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #59aff6;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #1e6cac;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

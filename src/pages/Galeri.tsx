@@ -1,10 +1,7 @@
 import { FC } from "react";
 
 const Galeri: FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default Galeri;

@@ -17,78 +17,84 @@ const Footer: FC<Props> = ({ className }: Props) => {
       case 2:
         return <MdEmail />;
       case 3:
-        return <img alt="" className="w-[15px]" src="/images/sponsors/ifest11/dewaweb-icon.png" />;
+        return (
+          <img
+            alt=""
+            className="w-[15px]"
+            src="/images/sponsors/ifest11/dewaweb-icon.png"
+          />
+        );
     }
   };
 
   const data = [
     {
-      "name": "Kompetisi",
-      "data": [
+      name: "Kompetisi",
+      data: [
         {
-          "name": "Business Case Competition (BCC)",
-          "link": "/bcc"
+          name: "Business Case Competition (BCC)",
+          link: "/bcc",
         },
         {
-          "name": "Web Design Competition (WDC)",
-          "link": "/wdc"
+          name: "Web Design Competition (WDC)",
+          link: "/wdc",
         },
         {
-          "name": "Mobile UI/UX Competition (MUC)",
-          "link": "/muc"
-        }
-      ]
+          name: "Mobile UI/UX Competition (MUC)",
+          link: "/muc",
+        },
+      ],
     },
     {
-      "name": "Acara",
-      "data": [
+      name: "Acara",
+      data: [
         {
-          "name": "Puncak Sharing Alumni",
-          "link": "/acara/sharing-alumni"
-        }
-      ]
+          name: "Puncak Sharing Alumni",
+          link: "/acara/sharing-alumni",
+        },
+      ],
     },
     {
-      "name": "Bisnis",
-      "data": [
+      name: "Bisnis",
+      data: [
         {
-          "name": "Sponsor",
-          "link": "/bisnis/sponsor"
-        }
-      ]
+          name: "Sponsor",
+          link: "/bisnis/sponsor",
+        },
+      ],
     },
     {
-      "name": "Akses",
-      "data": [
+      name: "Akses",
+      data: [
         {
-          "name": "Daftar",
-          "link": "/dash/daftar"
+          name: "Daftar",
+          link: "/dash/daftar",
         },
         {
-          "name": "Masuk",
-          "link": "/dash/masuk"
-        }
-      ]
+          name: "Masuk",
+          link: "/dash/masuk",
+        },
+      ],
     },
     {
-      "name": "Sosial Media",
-      "data": [
+      name: "Sosial Media",
+      data: [
         {
-          "name": "Instagram",
-          "link": "https://www.instagram.com/ifest_uajy"
+          name: "Instagram",
+          link: "https://www.instagram.com/ifest_uajy",
         },
         {
-          "name": "LINE",
-          "link": "https://line.me/ti/p/~@ykb1847q"
+          name: "LINE",
+          link: "https://line.me/ti/p/~@ykb1847q",
         },
         {
-          "name": "Email",
-          "link": "mailto:ifest@uajy.ac.id"
-        }
-      ]
-    }
+          name: "Email",
+          link: "mailto:ifest@uajy.ac.id",
+        },
+      ],
+    },
   ];
-  
+
   return (
     <>
       <div
@@ -108,12 +114,16 @@ const Footer: FC<Props> = ({ className }: Props) => {
         <div className="flex flex-col gap-2 text-left text-white">
           <div className="font-retroica text-xl tracking-widest">IFest#11</div>
           <div className="font-louisgeorgecafe opacity-70">
-            IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu.
+            IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak
+            tahun 2013 yang lalu.
           </div>
         </div>
         {data.map((nav, index) => {
           return (
-            <div className="flex flex-col gap-2 text-left text-white" key={index}>
+            <div
+              className="flex flex-col gap-2 text-left text-white"
+              key={index}
+            >
               <div className="font-retroica text-xl">{nav.name}</div>
               {nav.data.map((item, index) => {
                 return nav.name === "Akses" ? (

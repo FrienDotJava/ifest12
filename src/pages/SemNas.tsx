@@ -1,10 +1,7 @@
 import { FC } from "react";
 
 const SemNas: FC = () => {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default SemNas;

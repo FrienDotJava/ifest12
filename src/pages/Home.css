@@ -1,0 +1,163 @@
+.awan_animation,
+.awan_animation_layer {
+  height: 1000px;
+}
+
+.awan_animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.awan_animation_layer {
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+}
+
+.awan_animation_layer.parallax {
+  position: fixed;
+}
+
+#title {
+  background-image: url(./images/eternal-technology-title.png);
+  position: relative;
+  top: -90px;
+}
+
+#awan1 {
+  background-image: url(./images/awan-hero/awan1.png);
+}
+
+#awan2 {
+  background-image: url(./images/awan-hero/awan2.png);
+}
+
+#awan3 {
+  background-image: url(./images/awan-hero/awan3.png);
+}
+
+#awan4 {
+  background-image: url(./images/awan-hero/awan4.png);
+}
+
+#awan5 {
+  background-image: url(./images/awan-hero/awan5.png);
+}
+
+.container_swiper {
+  max-width: 100rem;
+  padding: 0rem 0;
+  margin: 1 auto;
+}
+
+.swiper-slide {
+  width: 40rem;
+  height: 0rem;
+  position: relative;
+  justify-content: center;
+}
+
+.swiper_container {
+  height: 35rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controler .button {
+  display: flex;
+  align-items: center;
+}
+
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.slider-controler .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 70%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.slider-controler .slider-arrow::after {
+  content: "";
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 10rem;
+  bottom: 10rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: blueviolet;
+}
+
+.uplift-button {
+  margin-top: -30px;
+}
+
+.q-faq {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.answer-faq {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: medium;
+}
