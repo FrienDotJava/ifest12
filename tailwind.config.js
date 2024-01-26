@@ -32,9 +32,9 @@ module.exports = {
         mytheme: {
           primary: "white",
 
-          secondary: "#242879",
+          secondary: "#531C9C",
 
-          accent: "#F97C44",
+          accent: "#A472F5",
 
           neutral: "#FFE1BF",
 
