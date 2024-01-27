@@ -6,11 +6,6 @@ import Transition from "../components/Transition";
 
 import './awan.css';
 const Home: FC = () => {
-  // const details = {
-  //   "bg1":"#88B7DD",
-  //   "bg2":"#2D678C",
-  //   "fg":"#275979"
-  // }
   return (
     <Transition>
       <NavBar bg1="#88B7DD" bg2="#2D678C" fg="#275979"/>
