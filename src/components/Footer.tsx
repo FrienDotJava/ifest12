@@ -26,8 +26,8 @@ const Footer: FC<Props> = ({ className }: Props) => {
       "name": "Kompetisi",
       "data": [
         {
-          "name": "Business Case Competition (BCC)",
-          "link": "/bcc"
+          "name": "Innovative Informatics Contest (I2C)",
+          "link": "/i2c"
         },
         {
           "name": "Web Design Competition (WDC)",
@@ -106,19 +106,19 @@ const Footer: FC<Props> = ({ className }: Props) => {
           </a>
         </motion.div>
         <div className="flex flex-col gap-2 text-left text-white">
-          <div className="font-retroica text-xl tracking-widest">IFest#11</div>
-          <div className="font-louisgeorgecafe opacity-70">
+          <div className="font-brokenConsole text-xl tracking-widest">IFest#12</div>
+          <div className="font-montserrat opacity-70">
             IFest adalah acara tahunan HIMAFORKA UAJY yang telah dimulai sejak tahun 2013 yang lalu.
           </div>
         </div>
         {data.map((nav, index) => {
           return (
             <div className="flex flex-col gap-2 text-left text-white" key={index}>
-              <div className="font-retroica text-xl">{nav.name}</div>
+              <div className="font-brokenConsole text-xl">{nav.name}</div>
               {nav.data.map((item, index) => {
                 return nav.name === "Akses" ? (
                   <a
-                    className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-60 transition ease-in-out hover:translate-x-2 hover:opacity-90"
+                    className="flex w-fit items-center gap-2 font-montserrat opacity-60 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={`https://ifest.uajy.ac.id${item.link}`}
                     key={index}
                     rel="noreferrer"
@@ -128,7 +128,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
                   </a>
                 ) : (
                   <a
-                    className="flex w-fit items-center gap-2 font-louisgeorgecafe opacity-60 transition ease-in-out hover:translate-x-2 hover:opacity-90"
+                    className="flex w-fit items-center gap-2 font-montserrat opacity-60 transition ease-in-out hover:translate-x-2 hover:opacity-90"
                     href={item.link}
                     key={index}
                   >

@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
-import BCC from "./pages/BCC";
+import I2C from "./pages/I2C";
 import WDC from "./pages/WDC";
 import MUC from "./pages/MUC";
 
@@ -18,7 +18,7 @@ function App() {
     <AnimatePresence>
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
-        <Route path="/bcc" element={<BCC />} />
+        <Route path="/i2c" element={<I2C />} />
         <Route path="/wdc" element={<WDC />} />
         <Route path="/muc" element={<MUC />} />
         <Route path="/semnas" element={<SemNas />} />
