@@ -1,0 +1,130 @@
+*,html,body{
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    height: fit-content;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-family: 'Inter';
+    font-size: 20px;
+
+}
+
+.page1{
+    height:100vh;
+    width: 100%;
+    background-color:  #8637c6;
+    background-image: url(assets/gunung.png),url(assets/objects.png),url(assets/objects-eEp.png);
+    background-size: 100%, 20%, 20%;
+    background-repeat: no-repeat;
+    background-position-y: 350px, 250px, 250px;
+    background-position-x: center, -50px, right;
+}
+
+.judul{
+    background: none;
+    height: auto;
+    width: 70%;
+    padding-top: 200px;
+    margin-left: 15%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 1;
+}
+
+.bpg1{
+    background: none;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.p1{
+    background: none;
+    width: 73%;
+    margin-left: 13%;
+    text-align: center;
+    color: white;
+}
+
+.p3{
+    background: none;
+    width: 73%;
+    margin-left: 13%;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    margin-bottom: -100px;
+    font-size: 13px;
+}
+
+.p4{
+    background: none;
+    width: 53%;
+    margin-left: 24%;
+    text-align: center;
+    color: white;
+}
+
+.page2{
+    /* background-color:  #441088; */
+}
+
+.cloudsbg{
+    height: 300px;
+    width: 100%;
+    background-image:url(assets/objects.png),url(assets/objects-eEp.png);
+    background-size:20%, 20%;
+    background-repeat: no-repeat;
+    background-position-y:50px,0 ;
+    background-position-x:-50px, right;
+}
+
+.judul2{
+    background: none;
+    height: auto;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    gap: 10px;
+}
+
+.card{
+    background: none;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.timeline{
+    margin-left: 100px;
+    margin-top: 200px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
