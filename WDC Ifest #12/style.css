@@ -302,6 +302,7 @@ h2 {
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
+    margin-left: 350px;
 }
 
 .slider {
@@ -349,7 +350,7 @@ h2 {
 
 .list3 {
     margin-top: 50px;
-    margin-left: -30px;
+    margin-left: -5px;
     display: flex;
     font-size: 18px;
     justify-content: center;
