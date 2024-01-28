@@ -1,15 +1,49 @@
-.bg-awan {
-  margin: 0;
-  background-repeat: no-repeat;
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/013/442/187/small/illustration-of-pixel-cloud-icon-png.png");
-  animation: movement 20s linear infinite;
+.awan_animation,
+.awan_animation_layer {
+  height: 1000px;
 }
 
-@keyframes movement {
-  0% {
-    background-position: -700px 0px;
-  }
-  100% {
-    background-position: 1500px 0px;
-  }
+.awan_animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.awan_animation_layer {
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.awan_animation_layer.parallax {
+  position: fixed;
+}
+
+#title {
+  background-image: url(./images/eternal-technology-title.png);
+  position: relative;
+  top: -90px;
+}
+
+#awan1 {
+  background-image: url(./images/awan-hero/awan1.png);
+}
+
+#awan2 {
+  background-image: url(./images/awan-hero/awan2.png);
+}
+
+#awan3 {
+  background-image: url(./images/awan-hero/awan3.png);
+}
+
+#awan4 {
+  background-image: url(./images/awan-hero/awan4.png);
+}
+
+#awan5 {
+  background-image: url(./images/awan-hero/awan5.png);
 }
