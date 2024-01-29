@@ -28,14 +28,14 @@ const Sponsor: FC = () => {
     }
   ];
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center gap-4 py-10">
-        <div className="mt-12 flex flex-row justify-center items-center gap-4">
+    <div className="mt-12 flex flex-row justify-center items-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-4 py-10 mx-4">
+        <div className="mt-12 flex mx-8 lg:mx-0 flex-row justify-center items-center gap-4">
           <img src="images/star.png" alt="star-img" className="w-12"/>
-          <div className="font-brokenConsole font-bold text-3xl text-[#2D678C]">SPONSOR IFest #12</div>
+          <div className="font-brokenConsole font-bold text-3xl text-[#2D678C] text-center">SPONSOR IFest #12</div>
           <img src="images/star.png" alt="star-img" className="w-12"/>
         </div>
-        <div className="flex h-fit w-96 py-4 lg:hidden">
+        <div className="flex h-fit w-80 py-4 lg:hidden">
           <Swiper
             autoplay={{ delay: 2000 }}
             className="mySwiper"

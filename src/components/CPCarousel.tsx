@@ -33,33 +33,40 @@ const CPCarousel: FC = () => {
     },
   ];
   return (
-    <div className="flex !w-9/12 h-fit">
-      <Swiper
-        breakpoints={{
-          1024: {
-            slidesPerView: 3
-          },
-        }}
-        className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
-        grid={{
-          rows: 1,
-          fill: "row",
-        }}
-        modules={[Grid, Pagination, Navigation]}
-        navigation
-        pagination={{
-          clickable: true,
-        }}
-        spaceBetween={8}
-      >
-        {CPdata.map((data) => {
-          return(
-            <SwiperSlide className="h-[25rem] px-24 lg:px-10">
-              <CP event={data.event} bg={data.bg} person1={data.person1} person2={data.person2} no1={data.no1} no2={data.no2}/>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+    <div className="flex flex-col justify-start items-center h-fit pb-12 bg-[#3483A2]">
+      <div className="mt-12 flex mx-8 lg:mx-0 flex-row justify-center items-center gap-4">
+        <img src="images/star.png" alt="star-img" className="w-12"/>
+        <div className="font-brokenConsole font-bold text-3xl text-white text-center">CONTACT PERSON</div>
+        <img src="images/star.png" alt="star-img" className="w-12"/>
+      </div>
+      <div className="flex !w-9/12 h-fit">
+        <Swiper
+          breakpoints={{
+            1024: {
+              slidesPerView: 3
+            },
+          }}
+          className="mySwiper classes.swiper-button-prev classes.swiper-button-next"
+          grid={{
+            rows: 1,
+            fill: "row",
+          }}
+          modules={[Grid, Pagination, Navigation]}
+          navigation
+          pagination={{
+            clickable: true,
+          }}
+          spaceBetween={8}
+        >
+          {CPdata.map((data) => {
+            return(
+              <SwiperSlide className="h-[25rem] px-24 lg:px-10">
+                <CP event={data.event} bg={data.bg} person1={data.person1} person2={data.person2} no1={data.no1} no2={data.no2}/>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
     </div>
   );
 };

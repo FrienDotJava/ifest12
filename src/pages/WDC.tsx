@@ -17,6 +17,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
+import { FaCertificate, FaMoneyBill } from "react-icons/fa";
+
 const timelineItems = [
   {
     title: "Pendaftaran",
@@ -65,7 +67,7 @@ const WDC: FC = () => {
             <img src="images/star.png" alt="star-img" className="w-12"/>
           </div>
 
-          <div className="font-montserrat text-white text-center px-10 lg:px-32 pb-12">
+          <div className="font-montserrat text-white text-justify lg:text-center px-10 lg:px-32 pb-12">
           Web Design Competition (WDC) adalah sebuah kompetisi di mana mahasiswa/i 
           dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat 
           desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau 
@@ -301,8 +303,8 @@ const WDC: FC = () => {
                 <div className="font-brokenConsole text-2xl py-4">Second</div>
               </div>
               <div className="flex flex-col justify-center items-start lg:items-center">
-                <div>Rp2.000.000,00</div>
-                <div>National Certificate</div>
+                <div className="flex gap-3 justify-center items-center"> <FaMoneyBill /> Rp2.000.000,00</div>
+                <div className="flex gap-3 justify-center items-center"> <FaCertificate /> National Certificate</div>
               </div>
             </div>
             <div className="order-first lg:order-none flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
@@ -311,8 +313,8 @@ const WDC: FC = () => {
                 <div className="font-brokenConsole text-3xl py-4">First</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
-                <div>Rp3.000.000,00</div>
-                <div>National Certificate</div>
+                <div className="flex gap-3 justify-center items-center"> <FaMoneyBill className="order-last lg:order-none"/> Rp3.000.000,00</div>
+                <div className="flex gap-3 justify-center items-center"> <FaCertificate className="order-last lg:order-none"/> National Certificate</div>
               </div>
             </div>
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
@@ -321,8 +323,8 @@ const WDC: FC = () => {
                 <div className="font-brokenConsole text-2xl py-4">Third</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
-                <div>Rp1.000.000,00</div>
-                <div>National Certificate</div>
+                <div className="flex gap-3 justify-center items-center"> <FaMoneyBill className="order-last lg:order-none"/> Rp1.000.000,00</div>
+                <div className="flex gap-3 justify-center items-center"> <FaCertificate className="order-last lg:order-none"/> National Certificate</div>
               </div>
             </div>
           </div>
@@ -337,7 +339,7 @@ const WDC: FC = () => {
               menunjukkan kreativitas dan keahlianmu di IFEST #12! 🌐
             </p>
             <a href="/" rel="noreferrer" target="_blank">
-              <button className="flex items-center gap-1 rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+              <button className="flex items-center gap-1 rounded-full bg-[#F4347F] transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
                 <div className="text-white text-xl font-bold">Daftar</div>
                 <img className="vector" src="images/Vector 9.svg" />
               </button>

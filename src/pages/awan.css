@@ -23,27 +23,28 @@
 }
 
 #title {
-  background-image: url(./images/eternal-technology-title.png);
+  background-image: url(/images/eternal-technology-title.png);
   position: relative;
+  /* background-size: cover; */
   top: -90px;
 }
 
 #awan1 {
-  background-image: url(./images/awan-hero/awan1.png);
+  background-image: url(/images/awan-hero/awan1.png);
 }
 
 #awan2 {
-  background-image: url(./images/awan-hero/awan2.png);
+  background-image: url(/images/awan-hero/awan2.png);
 }
 
 #awan3 {
-  background-image: url(./images/awan-hero/awan3.png);
+  background-image: url(/images/awan-hero/awan3.png);
 }
 
 #awan4 {
-  background-image: url(./images/awan-hero/awan4.png);
+  background-image: url(/images/awan-hero/awan4.png);
 }
 
 #awan5 {
-  background-image: url(./images/awan-hero/awan5.png);
+  background-image: url(/images/awan-hero/awan5.png);
 }

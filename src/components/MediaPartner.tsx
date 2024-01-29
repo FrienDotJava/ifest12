@@ -47,13 +47,14 @@ const MediaPartner: FC = () => {
     }
   ];
   return (
+    <div className="mt-12 flex flex-row justify-center items-center gap-4 w-[80%]">
       <div className="flex flex-col items-center justify-center gap-2 py-10 w-full">
         <div className="mt-12 flex flex-row justify-center items-center gap-4">
           <img src="images/star.png" alt="star-img" className="w-12"/>
-          <div className="font-brokenConsole font-bold text-3xl text-[#2D678C]">MEDIA PARTNERS</div>
+          <div className="font-brokenConsole font-bold text-3xl text-[#2D678C] text-center">MEDIA PARTNERS</div>
           <img src="images/star.png" alt="star-img" className="w-12"/>
         </div>
-        <div className="h-64 w-96 lg:hidden">
+        <div className="h-64 w-80 lg:hidden">
           <Swiper
             autoplay={{ delay: 2000 }}
             className="mySwiper"
@@ -98,6 +99,7 @@ const MediaPartner: FC = () => {
           </Swiper>
         </div>
       </div>
+    </div>
   );
 };
 

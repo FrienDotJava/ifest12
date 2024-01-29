@@ -62,10 +62,10 @@ const FAQ: FC = () => {
     }
   ];
   return (
-    <>
-      <div className="mt-12 mb-6 flex flex-row justify-center items-center gap-4">
+    <div className="flex flex-col justify-start items-center h-fit bg-gradient-to-b from-[#739AB3] to-[#3483A2]">
+      <div className="mt-12 mb-6 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
         <img src="images/star.png" alt="star-img" className="w-12"/>
-        <div className="font-brokenConsole font-bold text-3xl text-white">FREQUENTLY ASKED QUESTIONS</div>
+        <div className="font-brokenConsole font-bold text-3xl text-white text-center">FREQUENTLY ASKED QUESTIONS</div>
         <img src="images/star.png" alt="star-img" className="w-12"/>
       </div>
       <div className="w-9/12 lg:w-1/2 flex flex-col gap-3">
@@ -94,7 +94,7 @@ const FAQ: FC = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 
