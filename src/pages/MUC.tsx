@@ -44,7 +44,7 @@ const MUC: FC = () => {
     <Transition>
       <div className="secbody">
         <NavBar bg1="#FFBB52" bg2="#42B54C" fg="#42B54C" />
-        <section className="bg-[url('/images/background/bg-muc.png')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10">
+        <section className="bg-[url('/images/background/bg-muc.webp')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10">
           <div className="flex flex-row justify-center">
             <h1 className="text-5xl lg:text-6xl font-brokenConsole text-white text-center">
               MOBILE UI/UX COMPETITION
@@ -56,21 +56,21 @@ const MUC: FC = () => {
               Gratis
             </div>
             <div className="items-center gap-1 rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-              Mahasiswa/i D3/D4/S1
+              Mahasiswa D3/D4/S1
             </div>
             <div className="items-center gap-1 rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-              MAX. 3 orang
+              Maks. 3 peserta/tim
             </div>
           </div>
         </section>
 
         <section className="bg-gradient-to-b from-[#FF8D44] to-[#FFBB52]">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-white">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white">
               About MUC
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="font-montserrat text-white text-justify lg:text-center px-10 lg:px-32 pb-12">
@@ -123,11 +123,9 @@ const MUC: FC = () => {
                 </Dialog.Panel>
               </div>
             </Dialog>
-            <a href="/" rel="noreferrer" target="_blank">
-              <button className="flex items-center gap-4 rounded-full bg-[#42B54C] transition-all hover:scale-105 hover:shadow-[0_0px_15px_0px_#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-                <div className="text-white font-bold">Daftar</div>
-                <img className="vector" src="images/Vector 9.svg" />
-              </button>
+            <a href="/" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#42B54C] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
+              <div className="text-white font-bold">Daftar</div>
+              <img className="vector" src="images/Vector 9.svg" />
             </a>
             <button
               onClick={() => setOpenRulebook(true)}
@@ -156,11 +154,11 @@ const MUC: FC = () => {
 
         <section className="bg-gradient-to-b from-[#FFBB52] via-[#FFC771] to-[#FFECCF]">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-white text-center">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">
               Ketentuan MUC
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-center items-start gap-20">
@@ -289,11 +287,11 @@ const MUC: FC = () => {
 
         <section className="bg-gradient-to-b from-[#FFECCF] to-[#FF8D44] h-fit flex flex-col justify-center items-center">
           <div className="flex justify-center items-center gap-3 pt-16 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-[#FF8D44]">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#FF8D44]">
               TIMELINE MUC
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="p-12 mx-4 lg:mx-0 rounded-xl bg-[#FFECCF]">
@@ -336,13 +334,13 @@ const MUC: FC = () => {
 
         <section className="bg-gradient-to-b from-[#FF8D44] to-[#FF7236] h-fit flex flex-col justify-center items-center">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
             <h2 className="font-brokenConsole font-bold text-5xl text-white">
               PRIZEPOOL
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
-          <div className="text-white font-montserrat text-3xl font-bold">
+          <div className="text-white font-montserrat text-2xl lg:text-3xl font-bold">
             Rp5.000.000,00
           </div>
 
@@ -350,7 +348,7 @@ const MUC: FC = () => {
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  src="images/silver-cup.png"
+                  src="images/silver-cup.webp"
                   alt="silver-img"
                   className="w-32 lg:w-36"
                 />
@@ -370,11 +368,11 @@ const MUC: FC = () => {
             <div className="order-first lg:order-none flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  src="images/gold-cup.png"
+                  src="images/gold-cup.webp"
                   alt="silver-img"
                   className="w-32 lg:w-40"
                 />
-                <div className="font-brokenConsole text-3xl py-4">First</div>
+                <div className="font-brokenConsole text-2xl lg:text-3xl py-4">First</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
                 <div className="flex gap-3 justify-center items-center">
@@ -392,11 +390,11 @@ const MUC: FC = () => {
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  src="images/bronze-cup.png"
+                  src="images/bronze-cup.webp"
                   alt="silver-img"
                   className="w-32 lg:w-36"
                 />
-                <div className="font-brokenConsole text-3xl py-4">Third</div>
+                <div className="font-brokenConsole text-2xl lg:text-3xl py-4">Third</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
                 <div className="flex gap-3 justify-center items-center">
@@ -416,7 +414,7 @@ const MUC: FC = () => {
 
         <section className="bg-[#FF9B5C] py-12">
           <div className="flex flex-col justify-center items-center px-4">
-            <div className="font-brokenConsole font-bold text-3xl text-white text-center">
+            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">
               Tertarik? Ayo Segera Daftar!
             </div>
             <p className="font-montserrat text-center text-white py-4">
@@ -436,15 +434,15 @@ const MUC: FC = () => {
         <section className="bg-gradient-to-b from-[#FF7236] to-[#FC4D35] relative overflow-hidden">
           <img
             className="absolute w-60 opacity-50 top-52 -left-20 lg:top-24 lg:left-4"
-            src="images/awan3.png"
+            src="images/awan3.webp"
           />
 
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-white">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white">
               CONTACT US
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="flex flex-col justify-center items-center">
@@ -457,7 +455,7 @@ const MUC: FC = () => {
 
           <img
             className="absolute w-60 opacity-50 top-52 -right-20 lg:top-48 lg:right-0"
-            src="images/awan2.png"
+            src="images/awan2.webp"
           />
 
           <CP

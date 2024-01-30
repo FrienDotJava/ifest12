@@ -67,7 +67,7 @@ const Home: FC = () => {
               animate={{ x: 800 }}
               transition={{
                 delay: 1,
-                duration: 20,
+                duration: 30,
                 ease: "linear",
                 repeat: Infinity,
                 repeatType: "loop",
@@ -83,10 +83,10 @@ const Home: FC = () => {
               </ParallaxLayer>
             </motion.div>
             <motion.div
-              animate={{ y: 10 }}
+              animate={{ y: 20 }}
               transition={{
                 delay: 1,
-                duration: 2,
+                duration: 3,
                 ease: "linear",
                 repeat: Infinity,
                 repeatType: "reverse",
@@ -151,7 +151,7 @@ const Home: FC = () => {
               }}
             >
               <button onClick={handleClick}>
-                <div className="mt-12 font-brokenConsole text-white bg-[url('/images/pixel-button.png')] bg-contain bg-no-repeat bg-center w-36 h-12 transition-transform hover:scale-125 flex justify-center items-center cursor-pointer">
+                <div className="mt-12 font-brokenConsole text-white bg-[url('/images/pixel-button.webp')] bg-contain bg-no-repeat bg-center w-36 h-12 transition-transform hover:scale-125 flex justify-center items-center cursor-pointer">
                   Start
                 </div>
               </button>
@@ -179,38 +179,38 @@ const Home: FC = () => {
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
           <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
               INNOVATIVE INFORMATICS CONTEST
             </div>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
           <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
               WEB DEVELOPMENT COMPETITION
             </div>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
           <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
               MOBILE UI/UX COMPETITION
             </div>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
           <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
               SEMINAR NASIONAL
             </div>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
         </div>
         <div className="flex flex-col justify-start items-center h-fit bg-gradient-to-b from-[#cfe6fa] to-[#739AB3]">

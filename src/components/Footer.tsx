@@ -17,7 +17,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
       case 2:
         return <MdEmail />;
       case 3:
-        return <img alt="" className="w-[15px]" src="/images/sponsors/ifest11/dewaweb-icon.png" />;
+        return <img alt="" className="w-[15px]" src="/images/sponsors/ifest11/dewaweb-icon.webp" />;
     }
   };
 
@@ -102,7 +102,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
           whileTap={{ scale: 0.9 }}
         >
           <a href="/">
-            <img alt="ifest-logo" src="/images/ifest.png" />
+            <img alt="ifest-logo" src="/images/ifest.webp" />
           </a>
         </motion.div>
         <div className="flex flex-col gap-2 text-left text-white">

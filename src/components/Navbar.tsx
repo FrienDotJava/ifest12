@@ -188,7 +188,7 @@ const NavBar: FC<Color> = (props: Color) => {
           variant="h6"
           className="cursor-pointer ml-12 lg:ml-2" placeholder={undefined}        
         >
-          <img src="images/ifest.png" alt="ifest-logo" className="w-16 hover:scale-125 transition" />
+          <img src="images/ifest.webp" alt="ifest-logo" className="w-16 hover:scale-125 transition" />
         </Typography>
         <div className="flex items-center justify-end gap-6">
           <div className="hidden lg:block">

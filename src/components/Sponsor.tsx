@@ -9,31 +9,31 @@ const Sponsor: FC = () => {
     {
       "id": 1,
       "name": "Jagoan Hosting",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 2,
       "name": "Ajaib",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 3,
       "name": "DevCode",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 4,
       "name": "Dewaweb",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     }
   ];
   return (
     <div className="mt-12 flex flex-row justify-center items-center gap-4">
       <div className="flex flex-col items-center justify-center gap-4 py-10 mx-4">
         <div className="mt-12 flex mx-8 lg:mx-0 flex-row justify-center items-center gap-4">
-          <img src="images/star.png" alt="star-img" className="w-12"/>
-          <div className="font-brokenConsole font-bold text-3xl text-[#2D678C] text-center">SPONSOR IFest #12</div>
-          <img src="images/star.png" alt="star-img" className="w-12"/>
+          <img src="images/star.webp" alt="star-img" className="w-12"/>
+          <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">SPONSOR IFest #12</div>
+          <img src="images/star.webp" alt="star-img" className="w-12"/>
         </div>
         <div className="flex h-fit w-80 py-4 lg:hidden">
           <Swiper
@@ -55,7 +55,7 @@ const Sponsor: FC = () => {
             })}
           </Swiper>
         </div>
-        <div className="hidden lg:flex lg:w-1/2 lg:py-4">
+        <div className="hidden lg:flex lg:w-3/4 lg:py-4">
           <Swiper
             autoplay={{ delay: 2000 }}
             centeredSlides

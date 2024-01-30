@@ -17,7 +17,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import { FaCertificate, FaMoneyBill } from "react-icons/fa";
+import { FaCertificate, FaMoneyBill, FaTrophy } from "react-icons/fa";
 
 const timelineItems = [
   {
@@ -33,7 +33,7 @@ const timelineItems = [
     date: "13 Maret 2024"
   },
   {
-    title: "Final",
+    title: "Presentasi & Pengumuman Pemenang",
     date: "22 Maret 2024"
   },
 ];
@@ -45,7 +45,7 @@ const WDC: FC = () => {
     <Transition>
       <div className="secbody">
         <NavBar bg1="#8DD632" bg2="#8637C6" fg="#8637C6"/>
-        <section className="bg-[url('/images/background/bg-wdc.png')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10" id="sec1">
+        <section className="bg-[url('/images/background/bg-wdc.webp')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10" id="sec1">
           <div className="flex flex-row justify-center">
             <h1 className="text-5xl lg:text-6xl font-brokenConsole text-white text-center">
               WEB DEVELOPMENT <br /> COMPETITION
@@ -54,28 +54,24 @@ const WDC: FC = () => {
 
           <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
             <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Rp. 50.000</div>
-            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">SMA / Sederajat</div>
-            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">MAX. 3 orang</div>
+            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Mahasiswa D3/D4/S1</div>
+            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Maks. 3 peserta/tim</div>
           </div>
         </section>
 
         <section className="bg-gradient-to-b from-[#42B54C] to-[#9DDB59]">
 
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12"/>
-            <h2 className="font-brokenConsole font-bold text-3xl text-white text-center">About WDC</h2>
-            <img src="images/star.png" alt="star-img" className="w-12"/>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">About WDC</h2>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
           </div>
 
           <div className="font-montserrat text-white text-justify lg:text-center px-10 lg:px-32 pb-12">
-          Web Design Competition (WDC) adalah sebuah kompetisi di mana mahasiswa/i 
-          dalam sebuah tim yang terdiri dari maksimal dua orang berlomba untuk membuat 
-          desain web sebaik mungkin agar dapat mempermudah setiap pengguna web atau 
-          pencari informasi mendapatkan informasi yang jelas dan tepat. 
-          Web Design Competition (WDC) 2024 mengangkat tema “Embrace the 
-          Future of Local Economy with Technology” dengan harapan peserta akan 
-          mendesain sebuah web yang akan mempromosikan dan menjual produk UMKM 
-          lokal di daerah mereka.
+            Web Development Competition (WDC) 2024 merupakan
+            sebuah kompetisi penciptaan/perancangan sistem serta
+            desain visual informasi digital yang ditampilkan dalam situs
+            web. Web Design Competition (WDC) 2024 mengangkat tema "Exploring Indonesia With The Power of Technology"
           </div>
 
           {/* <div className="slider-wrapper">
@@ -93,7 +89,7 @@ const WDC: FC = () => {
           </div> */}
 
           <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
-            <button onClick={() => setOpenPoster(true)} className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Poster</button>
+            <button onClick={() => setOpenPoster(true)} className="items-center gap-1 font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Poster</button>
             <Dialog
               className="relative z-50"
               onClose={() => setOpenPoster(false)}
@@ -111,7 +107,11 @@ const WDC: FC = () => {
                 </Dialog.Panel>
               </div>
             </Dialog>
-            <button onClick={() => setOpenRulebook(true)} className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Rule Book</button>
+            <a href="/" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#8637C6] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
+              <div className="text-white font-bold">Daftar</div>
+              <img className="vector" src="images/Vector 9.svg" />
+            </a>
+            <button onClick={() => setOpenRulebook(true)} className="items-center gap-1 font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Rule Book</button>
             <Dialog
                 className="relative z-50"
                 onClose={() => setOpenRulebook(false)}
@@ -127,15 +127,15 @@ const WDC: FC = () => {
                     ></iframe>
                   </Dialog.Panel>
                 </div>
-              </Dialog>
+            </Dialog>
           </div>
         </section>
 
         <section className="bg-gradient-to-b from-[#9DDB59] via-[#B3E734] to-[#e6f9c3]">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12"/>
-            <h2 className="font-brokenConsole font-bold text-3xl text-[#F4347F]">Ketentuan WDC</h2>
-            <img src="images/star.png" alt="star-img" className="w-12"/>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#F4347F]">Ketentuan WDC</h2>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
           </div>
 
           <div className="flex flex-col lg:flex-row justify-center items-start gap-20">
@@ -259,9 +259,9 @@ const WDC: FC = () => {
 
         <section className="bg-gradient-to-b from-[#e6f9c3] to-[#42B54C] h-fit flex flex-col justify-center items-center">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12"/>
-            <h2 className="font-brokenConsole font-bold text-3xl text-[#F4347F]">TIMELINE WDC</h2>
-            <img src="images/star.png" alt="star-img" className="w-12"/>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#F4347F]">TIMELINE WDC</h2>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
           </div>
           
           <div className="p-12 mx-4 lg:mx-0 rounded-xl bg-[#e6f9c3]">
@@ -290,40 +290,43 @@ const WDC: FC = () => {
 
         <section className="bg-gradient-to-b from-[#42B54C] to-[#1B813D] h-fit flex flex-col justify-center items-center">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12"/>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
             <h2 className="font-brokenConsole font-bold text-5xl text-white">PRIZEPOOL</h2>
-            <img src="images/star.png" alt="star-img" className="w-12"/>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
           </div>
-          <div className="text-white font-montserrat text-3xl font-bold">Rp6.000.000,00</div>
+          <div className="text-white font-montserrat text-2xl lg:text-3xl font-bold">Rp6.000.000,00</div>
           
           <div className="flex flex-col lg:flex-row lg:justify-between w-2/3 lg:items-end py-12 gap-12">
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
-                <img src="images/silver-cup.png" alt="silver-img" className="w-32 lg:w-36"/>
+                <img src="images/silver-cup.webp" alt="silver-img" className="w-32 lg:w-36"/>
                 <div className="font-brokenConsole text-2xl py-4">Second</div>
               </div>
               <div className="flex flex-col justify-center items-start lg:items-center">
                 <div className="flex gap-3 justify-center items-center"> <FaMoneyBill /> Rp2.000.000,00</div>
+                <div className="flex gap-3 justify-center items-center"> <FaTrophy /> Trophy </div>
                 <div className="flex gap-3 justify-center items-center"> <FaCertificate /> National Certificate</div>
               </div>
             </div>
             <div className="order-first lg:order-none flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
-                <img src="images/gold-cup.png" alt="silver-img" className="w-32 lg:w-40"/>
-                <div className="font-brokenConsole text-3xl py-4">First</div>
+                <img src="images/gold-cup.webp" alt="silver-img" className="w-32 lg:w-40"/>
+                <div className="font-brokenConsole text-2xl lg:text-3xl py-4">First</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
                 <div className="flex gap-3 justify-center items-center"> <FaMoneyBill className="order-last lg:order-none"/> Rp3.000.000,00</div>
+                <div className="flex gap-3 justify-center items-center"> <FaTrophy /> Trophy </div>
                 <div className="flex gap-3 justify-center items-center"> <FaCertificate className="order-last lg:order-none"/> National Certificate</div>
               </div>
             </div>
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
-                <img src="images/bronze-cup.png" alt="silver-img" className="w-32 lg:w-36"/>
+                <img src="images/bronze-cup.webp" alt="silver-img" className="w-32 lg:w-36"/>
                 <div className="font-brokenConsole text-2xl py-4">Third</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
                 <div className="flex gap-3 justify-center items-center"> <FaMoneyBill className="order-last lg:order-none"/> Rp1.000.000,00</div>
+                <div className="flex gap-3 justify-center items-center"> <FaTrophy /> Trophy </div>
                 <div className="flex gap-3 justify-center items-center"> <FaCertificate className="order-last lg:order-none"/> National Certificate</div>
               </div>
             </div>
@@ -332,7 +335,7 @@ const WDC: FC = () => {
 
         <section className="bg-[#1ea64b] py-12" >
           <div className="flex flex-col justify-center items-center px-4" >
-            <div className="font-brokenConsole font-bold text-3xl text-white text-center">Tertarik? Ayo Segera Daftar!</div>
+            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">Tertarik? Ayo Segera Daftar!</div>
             <p className="font-montserrat text-center text-white py-4">
               Apakah kamu siap menghadapi tantangan di dunia teknologi
               informasi? Ayo, jangan lewatkan kesempatan <br /> untuk
@@ -348,12 +351,12 @@ const WDC: FC = () => {
         </section>
 
         <section className="bg-gradient-to-b from-[#1B813D] to-[#1A3D26] relative overflow-hidden">
-          <img className="absolute w-60 opacity-50 top-52 -left-20 lg:top-24 lg:left-4" src="images/awan3.png" />
+          <img className="absolute w-60 opacity-50 top-52 -left-20 lg:top-24 lg:left-4" src="images/awan3.webp" />
 
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12"/>
-            <h2 className="font-brokenConsole font-bold text-3xl text-white">CONTACT US</h2>
-            <img src="images/star.png" alt="star-img" className="w-12"/>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white">CONTACT US</h2>
+            <img src="images/star.webp" alt="star-img" className="w-12"/>
           </div>
 
           <div className="flex flex-col justify-center items-center">
@@ -364,7 +367,7 @@ const WDC: FC = () => {
             </p>
           </div>
 
-          <img className="absolute w-60 opacity-50 top-52 -right-20 lg:top-48 lg:right-0" src="images/awan2.png" />
+          <img className="absolute w-60 opacity-50 top-52 -right-20 lg:top-48 lg:right-0" src="images/awan2.webp" />
           
           <CP event="WDC" bg="#1ea64b" person1="Lisya" person2="Yonatan" no1="89503210551" no2="87753428099"/>
         </section>

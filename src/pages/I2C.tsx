@@ -44,7 +44,7 @@ const I2C: FC = () => {
     <Transition>
       <div className="secbody">
         <NavBar bg1="#531C9C" bg2="#F4347F" fg="#F4347F" />
-        <section className="bg-[url('/images/background/bg-i2c.png')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10">
+        <section className="bg-[url('/images/background/bg-i2c.webp')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10">
           <div className="flex flex-row justify-center">
             <h1 className="text-5xl lg:text-6xl font-brokenConsole text-white text-center">
               INNOVATIVE INFORMATICS <br /> CONTEST
@@ -66,11 +66,11 @@ const I2C: FC = () => {
 
         <section className="bg-gradient-to-b from-[#531C9C] to-[#8637C6]">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-white">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white">
               About I2C
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="font-montserrat text-white text-justify lg:text-center px-10 lg:px-32 pb-12">
@@ -122,11 +122,9 @@ const I2C: FC = () => {
                 </Dialog.Panel>
               </div>
             </Dialog>
-            <a href="/" rel="noreferrer" target="_blank">
-              <button className="flex items-center gap-4 rounded-full transition-all hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F] bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-                <div className="text-white font-bold">Daftar</div>
-                <img className="vector" src="images/Vector 9.svg" />
-              </button>
+            <a href="/" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#F4347F] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
+              <div className="text-white font-bold">Daftar</div>
+              <img className="vector" src="images/Vector 9.svg" />
             </a>
             <button
               onClick={() => setOpenRulebook(true)}
@@ -155,11 +153,11 @@ const I2C: FC = () => {
 
         <section className="bg-gradient-to-b from-[#8637C6] via-[#BE8ADE] to-[#E5D2F2]">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-[#F4347F] text-center">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">
               Ketentuan I2C
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-center items-start gap-20">
@@ -251,11 +249,11 @@ const I2C: FC = () => {
 
         <section className="bg-gradient-to-b from-[#E5D2F2] to-[#704BDA] h-fit flex flex-col justify-center items-center">
           <div className="flex justify-center items-center gap-3 pt-16 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-[#F4347F]">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#F4347F]">
               TIMELINE I2C
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="p-12 mx-4 lg:mx-0 rounded-xl bg-[#E5D2F2]">
@@ -298,13 +296,13 @@ const I2C: FC = () => {
 
         <section className="bg-gradient-to-b from-[#704BDA] to-[#552E91] h-fit flex flex-col justify-center items-center">
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
             <h2 className="font-brokenConsole font-bold text-5xl text-white">
               PRIZEPOOL
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
-          <div className="text-white font-montserrat text-3xl font-bold">
+          <div className="text-white font-montserrat text-2xl lg:text-3xl font-bold">
             Rp9.000.000,00
           </div>
 
@@ -312,7 +310,7 @@ const I2C: FC = () => {
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  src="images/silver-cup.png"
+                  src="images/silver-cup.webp"
                   alt="silver-img"
                   className="w-32 lg:w-36"
                 />
@@ -336,11 +334,11 @@ const I2C: FC = () => {
             <div className="order-first lg:order-none flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  src="images/gold-cup.png"
+                  src="images/gold-cup.webp"
                   alt="silver-img"
                   className="w-32 lg:w-40"
                 />
-                <div className="font-brokenConsole text-3xl py-4">First</div>
+                <div className="font-brokenConsole text-2xl lg:text-3xl py-4">First</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
                 <div className="flex gap-3 justify-center items-center">
@@ -362,11 +360,11 @@ const I2C: FC = () => {
             <div className="flex lg:flex-col justify-center items-center text-white font-montserrat gap-8 hover:scale-125 transition">
               <div className="flex flex-col justify-center items-center">
                 <img
-                  src="images/bronze-cup.png"
+                  src="images/bronze-cup.webp"
                   alt="silver-img"
                   className="w-32 lg:w-36"
                 />
-                <div className="font-brokenConsole text-3xl py-4">Third</div>
+                <div className="font-brokenConsole text-2xl lg:text-3xl py-4">Third</div>
               </div>
               <div className="flex flex-col order-first lg:order-none justify-center items-end lg:items-center">
                 <div className="flex gap-3 justify-center items-center">
@@ -390,7 +388,7 @@ const I2C: FC = () => {
 
         <section className="bg-[#6b30c7] py-12">
           <div className="flex flex-col justify-center items-center px-4">
-            <div className="font-brokenConsole font-bold text-3xl text-white text-center">
+            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">
               Tertarik? Ayo Segera Daftar!
             </div>
             <p className="font-montserrat text-center text-white py-4">
@@ -410,15 +408,15 @@ const I2C: FC = () => {
         <section className="bg-gradient-to-b from-[#552E91] to-[#290265] relative overflow-hidden">
           <img
             className="absolute w-60 opacity-50 top-52 -left-20 lg:top-24 lg:left-4"
-            src="images/awan3.png"
+            src="images/awan3.webp"
           />
 
           <div className="flex justify-center items-center gap-3 pt-12 pb-4">
-            <img src="images/star.png" alt="star-img" className="w-12" />
-            <h2 className="font-brokenConsole font-bold text-3xl text-white">
+            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white">
               CONTACT US
             </h2>
-            <img src="images/star.png" alt="star-img" className="w-12" />
+            <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
 
           <div className="flex flex-col justify-center items-center">
@@ -431,7 +429,7 @@ const I2C: FC = () => {
 
           <img
             className="absolute w-60 opacity-50 top-52 -right-20 lg:top-48 lg:right-0"
-            src="images/awan2.png"
+            src="images/awan2.webp"
           />
 
           <CP

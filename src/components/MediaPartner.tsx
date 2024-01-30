@@ -8,51 +8,51 @@ const MediaPartner: FC = () => {
     {
       "id": 1,
       "name": "Edaran Event",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 2,
       "name": "Event Campus Co",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 3,
       "name": "Event Campus",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 4,
       "name": "Info Event",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 5,
       "name": "Info Lomba Indonesia",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 6,
       "name": "Lomba SMA",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 7,
       "name": "Media Event",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     },
     {
       "id": 8,
       "name": "Seputar Info ID",
-      "image": "/images/ifest.png"
+      "image": "/images/ifest.webp"
     }
   ];
   return (
-    <div className="mt-12 flex flex-row justify-center items-center gap-4 w-[80%]">
+    <div className="mt-12 flex flex-col justify-center items-center gap-4 w-full">
       <div className="flex flex-col items-center justify-center gap-2 py-10 w-full">
-        <div className="mt-12 flex flex-row justify-center items-center gap-4">
-          <img src="images/star.png" alt="star-img" className="w-12"/>
-          <div className="font-brokenConsole font-bold text-3xl text-[#2D678C] text-center">MEDIA PARTNERS</div>
-          <img src="images/star.png" alt="star-img" className="w-12"/>
+        <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
+          <img src="images/star.webp" alt="star-img" className="w-12"/>
+          <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">MEDIA PARTNERS</div>
+          <img src="images/star.webp" alt="star-img" className="w-12"/>
         </div>
         <div className="h-64 w-80 lg:hidden">
           <Swiper
@@ -74,7 +74,7 @@ const MediaPartner: FC = () => {
             })}
           </Swiper>
         </div>
-        <div className="hidden lg:flex lg:w-10/12 lg:py-4 2xl:w-7/12">
+        <div className="hidden lg:block lg:w-10/12 lg:py-4 2xl:w-7/12">
           <Swiper
             autoplay={{ delay: 2000 }}
             className="mySwiper"
