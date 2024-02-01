@@ -56,7 +56,7 @@ const MUC: FC = () => {
               Mahasiswa D3/D4/S1
             </div>
             <div className="items-center gap-1 text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-              Maks. 3 peserta/tim
+              Maks. 2 peserta/tim
             </div>
             <div className="items-center gap-1 text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
               Rp20.000
@@ -304,12 +304,12 @@ const MUC: FC = () => {
                     ) : (
                       <TimelineConnector />
                     )}
-                    <TimelineHeader className="h-3">
+                    <TimelineHeader className="h-fit items-start">
                       <TimelineIcon className="bg-[#FF8D44]" />
                       <Typography
                         variant="h6"
                         color="blue-gray"
-                        className="leading-none font-brokenConsole text-[#FF8D44] text-lg py-4"
+                        className="leading-none font-brokenConsole text-[#FF8D44] text-base lg:text-lg"
                         placeholder={undefined}
                       >
                         {item.title}
@@ -448,7 +448,7 @@ const MUC: FC = () => {
           <div className="flex flex-col justify-center items-center">
             <p className="font-montserrat text-white text-center w-9/12 lg:w-3/5">
               Jika Anda memiliki pertanyaan lebih lanjut atau membutuhkan
-              bantuan terkait Innovative Informatics Competition IFEST #12,
+              bantuan terkait Mobile UI/UX Competition IFEST #12,
               jangan ragu untuk menghubungi kami!
             </p>
           </div>

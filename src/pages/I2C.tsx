@@ -78,10 +78,9 @@ const I2C: FC = () => {
             kemampuan peserta dalam menyusun ide untuk memecahkan berbagai
             permasalahan yang ada di dunia dengan memberikan solusi melalui
             pendekatan Teknologi Informasi, yang dapat berbentuk aplikasi, web,
-            dan juga IoT. Pada tahun ini, I2C mengangkat tema "A Step Closer to
-            Perfection" dengan harapan peserta dapat membuat produk inovatif
-            yang dapat membantu pengguna menguasai berbagai disiplin ilmu, baik
-            akademik maupun nonakademik, melalui media Teknologi Informasi.
+            dan juga IoT. Pada tahun ini, I2C mengangkat tema "A Bridge to Enhance 
+            Our Cultural Knowledge" dengan subtema "Educating". I2C tahun ini membawa 
+            perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. 
           </div>
 
           {/* <div className="slider-wrapper">
@@ -266,12 +265,12 @@ const I2C: FC = () => {
                     ) : (
                       <TimelineConnector />
                     )}
-                    <TimelineHeader className="h-3">
+                    <TimelineHeader className="h-fit items-start">
                       <TimelineIcon className="bg-[#F4347F]" />
                       <Typography
                         variant="h6"
                         color="blue-gray"
-                        className="leading-none font-brokenConsole text-[#F4347F] text-lg py-4"
+                        className="leading-none font-brokenConsole text-[#F4347F] text-base lg:text-lg"
                         placeholder={undefined}
                       >
                         {item.title}
@@ -327,7 +326,7 @@ const I2C: FC = () => {
                 </div>
                 <div className="flex gap-3 justify-center items-center">
                   {" "}
-                  <FaCertificate /> Certificate
+                  <FaCertificate /> Sertifikat
                 </div>
               </div>
             </div>
@@ -353,7 +352,7 @@ const I2C: FC = () => {
                 <div className="flex gap-3 justify-center items-center">
                   {" "}
                   <FaCertificate className="order-last lg:order-none" />{" "}
-                  Certificate
+                  Sertifikat
                 </div>
               </div>
             </div>
@@ -379,7 +378,7 @@ const I2C: FC = () => {
                 <div className="flex gap-3 justify-center items-center">
                   {" "}
                   <FaCertificate className="order-last lg:order-none" />{" "}
-                  Certificate
+                  Sertifikat
                 </div>
               </div>
             </div>

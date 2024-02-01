@@ -50,7 +50,7 @@ const NavListMenu: FC<Color> = (props:Color) => {
   const renderItems = navListMenuItems.map(
     (items , key) => (
       <a href={items.link} key={key}>
-        <MenuItem className={`flex items-center gap-3 rounded-lg hover:bg-[${props.bg2}] hover:text-white ml-8 lg:ml-0`} placeholder={undefined}>
+        <MenuItem className={`flex w-auto items-center gap-3 rounded-lg hover:bg-[${props.bg2}] hover:text-white ml-8 lg:ml-0`} placeholder={undefined}>
           <div>
             <Typography
               variant="h6"
