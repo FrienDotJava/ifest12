@@ -42,7 +42,7 @@ const FAQ: FC = () => {
     },
     {
       "question": "Apa saja yang diselenggarakan di IFest#12 ini?",
-      "answer": "IFest#12 menyelenggarakan beberapa kompetisi dan acara, antara lain: <ul className=\"list-outside list-disc pl-4\"> <li> Innovative Informatics Contest (I2C) </li> <li> Web Design Competition (WDC) </li> <li> Mobile UI/UX Competition (MUC) </li> <li> Seminar Nasional </li> </ul> Selain itu IFest#12 juga menyediakan berbagai produk-produk menarik yang dapat dibeli hanya di IFEST Store."
+      "answer": "IFest#12 menyelenggarakan beberapa kompetisi dan acara, antara lain: <ul className=\"list-outside list-disc pl-4\"> <li> Innovative Informatics Contest (I2C) </li> <li> Web Development Competition (WDC) </li> <li> Mobile UI/UX Competition (MUC) </li> <li> Seminar Nasional </li> </ul> Selain itu IFest#12 juga menyediakan berbagai produk-produk menarik yang dapat dibeli hanya di IFEST Store."
     },
     {
       "question": "Bagaimana cara mendaftar untuk setiap event IFest?",

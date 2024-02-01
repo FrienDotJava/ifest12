@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Transition from "../components/Transition";
-import Sponsor from "../components/Sponsor";
+// import Sponsor from "../components/Sponsor";
 import MediaPartner from "../components/MediaPartner";
 import FAQ from "../components/FAQ";
 import CPCarousel from "../components/CPCarousel";
@@ -160,51 +160,134 @@ const Home: FC = () => {
         </div>
         <div
           ref={ref}
-          className="flex flex-col justify-start items-center h-fit pb-20 bg-gradient-to-b from-[#5A99D2] from-40% via-[#A5CAE4] via-85% to-[#cfe6fa]"
+          className="flex flex-col justify-start lg:flex-row text-white items-center h-fit bg-gradient-to-b from-[#5A99D2] to-[#87ACCD] px-12 gap-1 lg:gap-8"
         >
-          <div className="mt-12 font-brokenConsole font-bold text-2xl lg:text-3xl text-white">
-            About IFest #12
-          </div>
-          <div className="mt-4 lg:mt-12 font-montserrat text-white px-8 lg:px-20 text-justify lg:text-center">
-            IFEST#12 UAJY stands for Informatics Festival. It is an annual
-            festival organized by the Informatics Student Association
-            (HIMAFORKA) at Atma Jaya University Yogyakarta. Our team has
-            developed a website that will serve as a platform to share
-            information with prospective participants about IFest#12 and the
-            registration process for IFest competitions. We handled the entire
-            process, from designing to deploying the website. The theme of this
-            year's Ifest is Eternal Technology : A Symphony from Informatics for
-            The Future.
-          </div>
-        </div>
-        <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
-          <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.webp" alt="star-img" className="w-12" />
-            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
-              INNOVATIVE INFORMATICS CONTEST
+          <img
+            src="/images/kompetisi/i2c-pic.webp"
+            alt="i2c"
+            className="w-9/12 lg:w-1/2"
+          />
+          <div className="flex flex-col justify-center items-center lg:items-start">
+            <div className="font-brokenConsole font-bold text-4xl lg:text-5xl text-center">
+              I2C
             </div>
-            <img src="images/star.webp" alt="star-img" className="w-12" />
-          </div>
-        </div>
-        <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
-          <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.webp" alt="star-img" className="w-12" />
-            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
-              WEB DEVELOPMENT COMPETITION
+            <div className="font-montserrat text-2xl lg:text-3xl font-bold text-center lg:text-left">
+              Innovative Informatics Contest 2024
             </div>
-            <img src="images/star.webp" alt="star-img" className="w-12" />
-          </div>
-        </div>
-        <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
-          <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.webp" alt="star-img" className="w-12" />
-            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
-              MOBILE UI/UX COMPETITION
+            <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm justify-start lg:w-full lg:flex-row lg:gap-6 lg:px-0">
+              <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                SMA / Sederajat
+              </div>
+              <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Maks. 3 peserta/tim
+              </div>
+              <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Rp100.000
+              </div>
             </div>
-            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <div className="font-montserrat text-justify">
+              Innovative Informatics Contest adalah sebuah kompetisi yang
+              menguji kemampuan peserta dalam menyusun ide untuk memecahkan
+              berbagai permasalahan yang ada di dunia dengan memberikan solusi
+              melalui pendekatan Teknologi Informasi, yang dapat berbentuk
+              aplikasi, web, dan juga IoT.
+            </div>
+            <a
+              href="/i2c"
+              rel="noreferrer"
+              target="_blank"
+              className="mt-8 flex justify-center gap-4 items-center font-bold rounded-full bg-[#8637C6] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#8637C6]"
+            >
+              <div className="text-white font-bold">Read more</div>
+              <img className="vector" src="images/Vector 9.svg" />
+            </a>
           </div>
         </div>
-        <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
+        <div className="flex flex-col lg:flex-row justify-start items-center h-fit bg-[#87ACCD] py-20 text-white px-12 gap-3 lg:gap-8">
+          <img
+            src="/images/kompetisi/wdc-pic.webp"
+            alt="wdc"
+            className="w-9/12 lg:w-1/2 lg:order-last"
+          />
+          <div className="flex flex-col justify-center items-center lg:items-start">
+            <div className="font-brokenConsole font-bold text-4xl lg:text-5xl text-center">
+              WDC
+            </div>
+            <div className="font-montserrat text-2xl lg:text-3xl font-bold text-center lg:text-left">
+              Web Development Competition 2024
+            </div>
+            <div className="flex flex-col flex-wrap gap-2 py-4 text-center text-sm text-white justify-start lg:w-full lg:flex-row lg:gap-4 lg:px-0">
+              <div className="items-center text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Mahasiswa D3/D4/S1
+              </div>
+              <div className="items-center text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Maks. 3 peserta/tim
+              </div>
+              <div className="items-center text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Rp50.000
+              </div>
+            </div>
+            <div className="font-montserrat text-justify">
+              Web Development Competition (WDC) 2024 merupakan sebuah kompetisi
+              penciptaan/perancangan sistem serta desain visual informasi
+              digital yang ditampilkan dalam situs web. Web Development Competition
+              (WDC) 2024 mengangkat tema "Exploring Indonesia With The Power of
+              Technology"
+            </div>
+            <a
+              href="/wdc"
+              rel="noreferrer"
+              target="_blank"
+              className="mt-8 flex justify-center gap-4 items-center font-bold rounded-full bg-[#42B54C] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#42B54C]"
+            >
+              <div className="text-white font-bold">Read more</div>
+              <img className="vector" src="images/Vector 9.svg" />
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-start items-center h-fit bg-gradient-to-b from-[#87ACCD] to-[#cfe6fa] text-[#2D678C] px-12 gap-8">
+          <img
+            src="/images/kompetisi/muc-pic.webp"
+            alt="muc"
+            className="w-9/12 lg:w-1/2"
+          />
+          <div className="flex flex-col justify-center items-center lg:items-start">
+            <div className="font-brokenConsole font-bold text-4xl lg:text-5xl text-center">
+              MUC
+            </div>
+            <div className="font-montserrat text-2xl lg:text-3xl font-bold text-center lg:text-left">
+              Mobile UI/UX Competition 2024
+            </div>
+            <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-start lg:w-full lg:flex-row lg:gap-6 lg:px-0">
+              <div className="items-center gap-1 text-base font-bold rounded-full bg-[#FF8D44] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Mahasiswa D3/D4/S1
+              </div>
+              <div className="items-center gap-1 text-base font-bold rounded-full bg-[#FF8D44] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Maks. 3 peserta/tim
+              </div>
+              <div className="items-center gap-1 text-base font-bold rounded-full bg-[#FF8D44] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Rp20.000
+              </div>
+            </div>
+            <div className="font-montserrat text-justify">
+              Mobile UI/UX Competition (MUC) merupakan sebuah kompetisi /
+              perlombaan terkhusus untuk mahasiswa/i dimana akan membuat serta
+              menampilkan sebuah desain visual / interface dari sebuah aplikasi
+              mobile supaya dapat digunakan lebih efektif serta menarik bagi
+              para pengguna aplikasi tersebut.
+            </div>
+            <a
+              href="/muc"
+              rel="noreferrer"
+              target="_blank"
+              className="mt-8 flex justify-center gap-4 items-center font-bold rounded-full bg-[#FF8D44] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#FF8D44]"
+            >
+              <div className="text-white font-bold">Read more</div>
+              <img className="vector" src="images/Vector 9.svg" />
+            </a>
+          </div>
+        </div>
+        {/* <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
           <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
             <img src="images/star.webp" alt="star-img" className="w-12" />
             <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
@@ -212,9 +295,9 @@ const Home: FC = () => {
             </div>
             <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col justify-start items-center h-fit bg-gradient-to-b from-[#cfe6fa] to-[#739AB3]">
-          <Sponsor />
+          {/* <Sponsor /> */}
           <MediaPartner />
         </div>
         <FAQ />

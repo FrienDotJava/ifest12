@@ -30,7 +30,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
           "link": "/i2c"
         },
         {
-          "name": "Web Design Competition (WDC)",
+          "name": "Web Development Competition (WDC)",
           "link": "/wdc"
         },
         {
@@ -43,8 +43,8 @@ const Footer: FC<Props> = ({ className }: Props) => {
       "name": "Acara",
       "data": [
         {
-          "name": "Puncak Sharing Alumni",
-          "link": "/acara/sharing-alumni"
+          "name": "Seminar Nasional",
+          "link": "/semnas"
         }
       ]
     },
@@ -53,7 +53,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
       "data": [
         {
           "name": "Sponsor",
-          "link": "/bisnis/sponsor"
+          "link": "/sponsor"
         }
       ]
     },

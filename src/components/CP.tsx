@@ -36,7 +36,7 @@ const CP: FC<Props> = (props : Props) => {
               <a href={`https://wa.me/62${props.no2}`} target="_blank">
                 <button className="flex flex-row justify-center items-center gap-2 bg-[#5ECC85] p-3 rounded-full">
                   <FaWhatsapp />
-                  <div>0{props.no1}</div>
+                  <div>0{props.no2}</div>
                 </button>
               </a>
             </div>

@@ -11,8 +11,6 @@ export default withMT({
     extend: {
       fontFamily: {
         brokenConsole: ["Broken Console", "sans-serif"],
-        louisGeorgeCafe: ["Louis George Cafe", "sans-serif"],
-        josefinSans: ["Josefin Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       }
     },

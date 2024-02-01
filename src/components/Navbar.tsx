@@ -29,7 +29,7 @@ const navListMenuItems: NavListMenuItem[] = [
     link: "/i2c"
   },
   {
-    title: "Web Design Competition (WDC)",
+    title: "Web Development Competition (WDC)",
     link: "/wdc"
   },
   {

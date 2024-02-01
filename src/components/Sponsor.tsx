@@ -9,22 +9,22 @@ const Sponsor: FC = () => {
     {
       "id": 1,
       "name": "Jagoan Hosting",
-      "image": "/images/ifest.webp"
+      "image": "/images/sponsors/ifest10/jagoan-hosting.webp"
     },
     {
       "id": 2,
       "name": "Ajaib",
-      "image": "/images/ifest.webp"
+      "image": "/images/sponsors/ifest10/ajaib.webp"
     },
     {
       "id": 3,
       "name": "DevCode",
-      "image": "/images/ifest.webp"
+      "image": "/images/sponsors/ifest10/devcode.webp"
     },
     {
       "id": 4,
       "name": "Dewaweb",
-      "image": "/images/ifest.webp"
+      "image": "/images/sponsors/ifest11/dewaweb.webp"
     }
   ];
   return (
@@ -84,7 +84,7 @@ const Sponsor: FC = () => {
             })}
           </Swiper>
         </div>
-        <a href="/bisnis/sponsor">
+        <a href="/sponsor">
           <motion.button
             animate={{ opacity: 1 }}
             className="rounded-[2.0em] bg-[#531C9C] px-5 py-4 font-brokenConsole text-sm text-white transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#886fcb] lg:text-base"

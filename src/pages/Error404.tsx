@@ -9,7 +9,7 @@ const Error404: FC = () => {
       <div className="h-screen flex flex-col justify-center items-center bg-[#FF753C]">
         <div className="flex flex-row w-full justify-center items-center">
           <img src="images/traffic-cone.webp" alt="cone-img" className="w-1/6 relative lg:left-16 left-8"/>
-          <div className="text-[14vw] font-brokenConsole text-[#531C9C] leading-none" style={{"textShadow" : "10px 10px 0px #B3E734"}}>404</div>
+          <div className="text-[14vw] font-brokenConsole text-[#531C9C] leading-none" style={{"textShadow" : "0.3rem 0.3rem 0rem #B3E734"}}>404</div>
           <img src="images/traffic-cone.webp" alt="cone-img" className="w-1/6 rotate-[120deg] relative lg:right-10 top-5"/>
         </div>
         <div className="lg:text-6xl text-3xl text-white font-brokenConsole">OOOPS!</div>

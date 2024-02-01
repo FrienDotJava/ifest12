@@ -8,16 +8,6 @@
 }
 
 @font-face {
-  font-family: "Louis George Cafe";
-  src: url("/fonts/Louis George Cafe.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("/fonts/Josefin Sans.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat.ttf") format("truetype");
 }

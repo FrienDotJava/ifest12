@@ -5,46 +5,76 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const MediaPartner: FC = () => {
   const mediapartners = [
+    // {
+    //   "id": 1,
+    //   "name": "Edaran Event",
+    //   "image": "/images/media-partners/edaranevent.webp"
+    // },
+    // {
+    //   "id": 2,
+    //   "name": "Event Campus Co",
+    //   "image": "/images/media-partners/eventcampus.co.webp"
+    // },
     {
       "id": 1,
-      "name": "Edaran Event",
-      "image": "/images/ifest.webp"
+      "name": "Event Campus",
+      "image": "/images/media-partners/eventcampus.webp"
     },
     {
       "id": 2,
-      "name": "Event Campus Co",
-      "image": "/images/ifest.webp"
+      "name": "Info Event",
+      "image": "/images/media-partners/infoevent.webp"
     },
+    // {
+    //   "id": 5,
+    //   "name": "Info Lomba Indonesia",
+    //   "image": "/images/media-partners/infolomba.indonesia.webp"
+    // },
     {
       "id": 3,
-      "name": "Event Campus",
-      "image": "/images/ifest.webp"
+      "name": "Lomba SMA",
+      "image": "/images/media-partners/lombasma.webp"
     },
+    // {
+    //   "id": 7,
+    //   "name": "Media Event",
+    //   "image": "/images/media-partners/mediaevent.webp"
+    // },
     {
       "id": 4,
-      "name": "Info Event",
-      "image": "/images/ifest.webp"
+      "name": "Seputar Info ID",
+      "image": "/images/media-partners/seputar.infoid.webp"
     },
     {
       "id": 5,
-      "name": "Info Lomba Indonesia",
-      "image": "/images/ifest.webp"
+      "name": "Info Kampusku",
+      "image": "/images/media-partners/infokampusku.webp"
     },
     {
       "id": 6,
-      "name": "Lomba SMA",
-      "image": "/images/ifest.webp"
+      "name": "Info Lomba",
+      "image": "/images/media-partners/infolomba.webp"
     },
     {
       "id": 7,
-      "name": "Media Event",
-      "image": "/images/ifest.webp"
+      "name": "Info Mahasiswa Indonesia",
+      "image": "/images/media-partners/infomahasiswaindonesia.webp"
     },
     {
       "id": 8,
-      "name": "Seputar Info ID",
-      "image": "/images/ifest.webp"
-    }
+      "name": "Event.tik",
+      "image": "/images/media-partners/eventtik.webp"
+    },
+    {
+      "id": 9,
+      "name": "Events.Ina",
+      "image": "/images/media-partners/events.ina.webp"
+    },
+    {
+      "id": 10,
+      "name": "Sobat Lomba",
+      "image": "/images/media-partners/sobatlomba.id.webp"
+    },
   ];
   return (
     <div className="mt-12 flex flex-col justify-center items-center gap-4 w-full">

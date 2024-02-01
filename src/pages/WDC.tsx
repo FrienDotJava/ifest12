@@ -21,7 +21,7 @@ import { FaCertificate, FaMoneyBill, FaTrophy } from "react-icons/fa";
 
 const timelineItems = [
   {
-    title: "Pendaftaran",
+    title: "Pendaftaran & Pengumpulan Karya",
     date: "2 Februari - 5 Maret 2024"
   },
   {
@@ -53,9 +53,9 @@ const WDC: FC = () => {
           </div>
 
           <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
-            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Rp. 50.000</div>
-            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Mahasiswa D3/D4/S1</div>
-            <div className="items-center gap-1 rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Maks. 3 peserta/tim</div>
+            <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Mahasiswa D3/D4/S1</div>
+            <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Maks. 3 peserta/tim</div>
+            <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Rp. 50.000</div>
           </div>
         </section>
 
@@ -89,7 +89,7 @@ const WDC: FC = () => {
           </div> */}
 
           <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
-            <button onClick={() => setOpenPoster(true)} className="items-center gap-1 font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Poster</button>
+            <button onClick={() => setOpenPoster(true)} className="items-center gap-1 font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#8637C6]">Poster</button>
             <Dialog
               className="relative z-50"
               onClose={() => setOpenPoster(false)}
@@ -107,11 +107,11 @@ const WDC: FC = () => {
                 </Dialog.Panel>
               </div>
             </Dialog>
-            <a href="/" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#8637C6] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
+            <a href="https://bit.ly/Pendaftaran_WDC" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#8637C6] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#8637C6]">
               <div className="text-white font-bold">Daftar</div>
               <img className="vector" src="images/Vector 9.svg" />
             </a>
-            <button onClick={() => setOpenRulebook(true)} className="items-center gap-1 font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">Rule Book</button>
+            <button onClick={() => setOpenRulebook(true)} className="items-center gap-1 font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#8637C6]">Rule Book</button>
             <Dialog
                 className="relative z-50"
                 onClose={() => setOpenRulebook(false)}
@@ -160,7 +160,7 @@ const WDC: FC = () => {
                 </li>
                 <li>
                   Melakukan pendaftaran online melalui
-                  https://ifest.uajy.ac.id/dash/, pendaftaran akan dibuka mulai
+                  <a href="https://bit.ly/Pendaftaran_WDC" target="_blank" className="text-[#F4347F] hover:text-[#D0047F]"> https://bit.ly/Pendaftaran_WDC</a>, pendaftaran akan dibuka mulai
                   dari Jumat, 2 Februari 2024 sampai dengan Senin, 5 Maret 2024
                   pukul 23.59 WIB.
                 </li>
@@ -221,7 +221,7 @@ const WDC: FC = () => {
                   Bahasa Indonesia atau Bahasa Inggris dan diperbolehkan
                   menggunakan istilah dalam bahasa asing.
                 </li>
-                <li>eserta wajib menyertakan kode (code) desain web.</li>
+                <li>Peserta wajib menyertakan kode (code) desain web.</li>
                 <li>
                   Desain situs web dilarang mengandung unsur SARA, kekerasan,
                   pornografi, dan melanggar UU yang berlaku.
@@ -239,18 +239,30 @@ const WDC: FC = () => {
                   Keputusan panitia bersifat mutlak dan tidak dapat diganggu
                   gugat.
                 </li>
-                <li>Penilaian karya didasarkan pada kriteria berikut.</li>
-                <li>
-                  Tampilan Layout/Antarmuka (30%) Menampilkan antarmuka situs
-                  web dengan struktur yang tepat.
-                </li>
-                <li>
-                  Kesesuaian Tema (30%) Situs web yang didesain berkaitan
-                  dengan tema yang telah ditentukan. Daya Tarik dan Informatif
-                  (25%) Dapat menciptakan daya tarik dan memberikan pesan yang
-                  informatif. Responsif (15%) Situs web dapat diakses dengan
-                  menyesuaikan ukuran pada perangkat yang berbeda (desktop,
-                  tablet, mobile).
+                <li>Penilaian karya didasarkan pada kriteria berikut. 
+                  <ul className="list-disc list-outside pl-4">
+                    <li>
+                    Tampilan Layout/Antarmuka (30%):
+                    menampilkan antarmuka situs
+                    web dengan struktur yang tepat. 
+                    </li>
+                    <li>
+                      Kesesuaian Tema (30%):
+                      situs web yang didesain berkaitan
+                      dengan tema yang telah ditentukan.
+                    </li>
+                    <li>
+                      Daya Tarik dan Informatif (25%):
+                      dapat menciptakan daya tarik dan memberikan pesan yang
+                      informatif.
+                    </li>
+                    <li>
+                      Responsif (15%):
+                      situs web dapat diakses dengan
+                      menyesuaikan ukuran pada perangkat yang berbeda (desktop,
+                      tablet, mobile).
+                    </li>
+                  </ul>
                 </li>
               </ol>
             </div>
@@ -341,7 +353,7 @@ const WDC: FC = () => {
               informasi? Ayo, jangan lewatkan kesempatan <br /> untuk
               menunjukkan kreativitas dan keahlianmu di IFEST #12! 🌐
             </p>
-            <a href="/" rel="noreferrer" target="_blank">
+            <a href="https://bit.ly/Pendaftaran_WDC" rel="noreferrer" target="_blank">
               <button className="flex items-center gap-1 rounded-full bg-[#F4347F] transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
                 <div className="text-white text-xl font-bold">Daftar</div>
                 <img className="vector" src="images/Vector 9.svg" />

@@ -52,14 +52,14 @@ const I2C: FC = () => {
           </div>
 
           <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
-            <div className="items-center gap-1 rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-              Rp100.000
-            </div>
-            <div className="items-center gap-1 rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+            <div className="items-center gap-1 text-base font-bold rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
               SMA / Sederajat
             </div>
-            <div className="items-center gap-1 rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-              MAX. 3 orang
+            <div className="items-center gap-1 text-base font-bold rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+              Maks. 3 peserta/tim
+            </div>
+            <div className="items-center gap-1 text-base font-bold rounded-full bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+              Rp100.000
             </div>
           </div>
         </section>
@@ -122,7 +122,7 @@ const I2C: FC = () => {
                 </Dialog.Panel>
               </div>
             </Dialog>
-            <a href="/" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#F4347F] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
+            <a href="https://bit.ly/I2C_Pendaftaran" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#F4347F] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
               <div className="text-white font-bold">Daftar</div>
               <img className="vector" src="images/Vector 9.svg" />
             </a>
@@ -191,8 +191,8 @@ const I2C: FC = () => {
                   pada formulir pendaftaran.
                 </li>
                 <li>
-                  Setiap tim harus membayar biaya pendaftaran lomba sebesar Rp
-                  150.000.
+                  Setiap tim harus membayar biaya pendaftaran lomba sebesar 
+                  Rp100.000.
                 </li>
                 <li>
                   Pengembalian (refund) biaya pendaftaran tidak dapat dilakukan
@@ -396,7 +396,7 @@ const I2C: FC = () => {
               informasi? Ayo, jangan lewatkan kesempatan <br /> untuk
               menunjukkan kreativitas dan keahlianmu di IFEST #12! 🌐
             </p>
-            <a href="/" rel="noreferrer" target="_blank">
+            <a href="https://bit.ly/I2C_Pendaftaran" rel="noreferrer" target="_blank">
               <button className="flex items-center gap-4 rounded-full transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#F4347F] bg-[#F4347F] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
                 <div className="text-white text-xl font-bold">Daftar</div>
                 <img className="vector" src="images/Vector 9.svg" />
