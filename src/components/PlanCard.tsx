@@ -124,7 +124,7 @@ export default function PlanCard({
             ))}
           </ul>
           <button
-            className="text-white justify-center items-center py-3 mt-5 -mb-5 bg-[#F4347F] rounded-[44px] hover:scale-105 hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]"
+            className="text-white justify-center items-center py-3 mt-5 -mb-5 bg-[#F4347F] rounded-[44px] hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]"
             {...getToggleProps({
               onClick: () => setExpanded((prevExpanded) => !prevExpanded),
             })}
