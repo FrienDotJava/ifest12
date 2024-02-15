@@ -6,12 +6,12 @@ import NavBar from "../components/Navbar";
 import CP from "../components/CP";
 import Footer from "../components/Footer";
 
-const Usda: FC = () => {
+const Store: FC = () => {
   return (
     <Transition>
       <div>
         <NavBar bg1="#531C9C" bg2="#F4347F" fg="#F4347F" />
-        <section className="bg-[url('/images/background/bg-i2c.webp')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10">
+        <section className="bg-[url('/images/background/bg-store.png')] bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center pt-10">
           <div className="flex flex-row justify-center">
             <h1 className="text-5xl lg:text-6xl font-brokenConsole text-white text-center">
               IFEST STORE
@@ -35,4 +35,4 @@ const Usda: FC = () => {
   );
 };
 
-export default Usda;
+export default Store;

@@ -8,7 +8,7 @@ import MUC from "./pages/MUC";
 import SemNas from "./pages/SemNas";
 import Galeri from "./pages/Galeri";
 import Sponsor from "./pages/Sponsor";
-import Usda from "./pages/USDA";
+import Store from "./pages/Store";
 
 import Error404 from "./pages/Error404";
 import { AnimatePresence } from "framer-motion";
@@ -25,11 +25,11 @@ function App() {
         <Route path="/semnas" element={<SemNas />} />
         <Route path="/galeri" element={<Galeri />} />
         <Route path="/sponsor" element={<Sponsor />} />
-        <Route path="/usda" element={<Usda />} />
+        <Route path="/usda" element={<Store />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </AnimatePresence>
   );
 }
 
-export default App
+export default App;

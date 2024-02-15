@@ -47,9 +47,9 @@ const Sponsor: FC = () => {
                 "Pencantuman link website atau akun sosial media pihak sponsor pada website IFEST #12.",
                 "Pencantuman logo pihak sponsor pada media publikasi (poster, virtual background, dan sejenisnya) di semua event IFEST #12 dengan ukuran lebih kecil dari paket gold.",
                 "Pencantuman logo pihak sponsor pada sertifikat di semua event IFEST #12 dengan ukuran lebih kecil dari paket gold.",
+                "Pencantuman logo pihak sponsor pada after movie IFEST #12 dengan ukuran lebih kecil dari paket gold.",
               ]}
               extraFeatures={[
-                "Pencantuman logo pihak sponsor pada after movie IFEST #12 dengan ukuran lebih kecil dari paket gold.",
                 "Promosi (penyebutan) nama pihak sponsor oleh MC saat acara berlangsung pada semua event IFEST #12 dengan ketentuan yang ditetapkan pada MoU.",
               ]}
               price="1.500.000"
@@ -62,10 +62,10 @@ const Sponsor: FC = () => {
                 "Pencantuman link website atau akun sosial media pihak sponsor pada website IFEST #12.",
                 "Pencantuman logo pihak sponsor pada media publikasi (poster, virtual background, dan sejenisnya) di semua event IFEST #12.",
                 "Pencantuman logo pihak sponsor pada sertifikat di semua event IFEST #12.",
-              ]}
-              extraFeatures={[
                 "Pencantuman logo pihak sponsor pada after movie IFEST #12.",
                 "Iklan adlibs oleh MC saat acara berlangsung pada semua event IFEST #12 dengan materi iklan disediakan oleh pihak sponsor dengan ketentuan yang ditetapkan pada MoU.",
+              ]}
+              extraFeatures={[
                 "Paid promote pada seluruh akun Instagram panitia dengan ketentuan yang ditetapkan pada MoU.",
                 "Penayangan iklan dalam bentuk video saat break (istirahat) acara pada semua event IFEST #12 dengan durasi maksimal 60 detik. Materi iklan dari pihak sponsor. Panitia hanya menayangkan.",
                 "Penayangan Iklan dalam bentuk video dan atau gambar (maksimal 3 slide) beserta logo dan penjelasan singkat pada halaman sponsor di website IFEST #12. Resolusi Video (bila ada) maks (Resolusi) dengan durasi maks. 60 detik dan resolusi gambar maks. (Resolusi Gambar) px. Materi iklan dari pihak sponsor. Panitia hanya menayangkan.",
@@ -80,9 +80,9 @@ const Sponsor: FC = () => {
                 "Pencantuman link website atau akun sosial media pihak sponsor pada website IFEST #12.",
                 "Pencantuman logo pihak sponsor pada media publikasi (poster, virtual background, dan sejenisnya) di semua event IFEST #12 dengan ukuran lebih kecil dari paket platinum.",
                 "Pencantuman logo pihak sponsor pada sertifikat di semua event IFEST #12 dengan ukuran lebih kecil dari paket platinum.",
+                "Pencantuman logo pihak sponsor pada after movie IFEST #12 dengan ukuran lebih kecil dari paket platinum.",
               ]}
               extraFeatures={[
-                "Pencantuman logo pihak sponsor pada after movie IFEST #12 dengan ukuran lebih kecil dari paket platinum.",
                 "Promosi (penyebutan) nama pihak sponsor oleh MC saat acara berlangsung pada semua event IFEST #12 dengan ketentuan yang ditetapkan pada MoU.",
                 "Penayangan Iklan dalam bentuk video saat break (istirahat) acara pada semua event IFEST #12 dengan durasi maksimal 20 detik. Materi iklan dari pihak sponsor. Panitia hanya menayangkan.",
               ]}
