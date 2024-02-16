@@ -57,19 +57,19 @@ const Footer: FC<Props> = ({ className }: Props) => {
         }
       ]
     },
-    {
-      "name": "Akses",
-      "data": [
-        {
-          "name": "Daftar",
-          "link": "/dash/daftar"
-        },
-        {
-          "name": "Masuk",
-          "link": "/dash/masuk"
-        }
-      ]
-    },
+    // {
+    //   "name": "Akses",
+    //   "data": [
+    //     {
+    //       "name": "Daftar",
+    //       "link": "/dash/daftar"
+    //     },
+    //     {
+    //       "name": "Masuk",
+    //       "link": "/dash/masuk"
+    //     }
+    //   ]
+    // },
     {
       "name": "Sosial Media",
       "data": [

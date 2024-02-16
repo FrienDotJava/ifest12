@@ -14,7 +14,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
-  const MUCdate = new Date("2024-02-19");
+  // const MUCdate = new Date("2024-02-19");
   const semnasDate = new Date("2024-04-01");
   const current = new Date();
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/i2c" element={<I2C />} />
         <Route path="/wdc" element={<WDC />} />
-        <Route path="/muc" element={current.getTime() >= MUCdate.getTime() ? <MUC /> : <UnderDevelopment />} />
+        <Route path="/muc" element={<MUC />} />
         <Route path="/semnas" element={current.getTime() >= semnasDate.getTime() ? <SemNas /> : <UnderDevelopment />} />
         <Route path="/sponsor" element={<UnderDevelopment />} />
         <Route path="*" element={<Error404 />} />

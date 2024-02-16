@@ -179,7 +179,7 @@ const Home: FC = () => {
                 SMA / Sederajat
               </div>
               <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
-                Maks. 3 peserta/tim
+                3 peserta/tim
               </div>
               <div className="items-center gap-1 text-base font-bold rounded-full bg-[#8637C6] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
                 Rp100.000

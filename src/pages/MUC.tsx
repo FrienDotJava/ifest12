@@ -25,14 +25,18 @@ const timelineItems = [
   },
   {
     title: "Penjurian",
-    date: "29 Maret - 25 Maret 2024",
+    date: "19 Maret - 25 Maret 2024",
   },
   {
-    title: "Pengumuman & Technical Meeting",
+    title: "Pengumuman Finalis",
     date: "26 Maret 2024",
   },
   {
-    title: "Final",
+    title: "Technical Meeting",
+    date: "27 Maret 2024",
+  },
+  {
+    title: "Presentasi dan Pengumuman Pemenang",
     date: "6 April 2024",
   },
 ];
@@ -79,10 +83,9 @@ const MUC: FC = () => {
             menampilkan sebuah desain visual / interface dari sebuah aplikasi
             mobile supaya dapat digunakan lebih efektif serta menarik bagi para
             pengguna aplikasi tersebut. Tema yang diangkat Mobile UI/UX
-            Competition 2024 ini yaitu “Develop Innovation and Ideas for Mobile
-            UI/UX in Student Portal Application”, yang menunjukkan lomba ini
-            dapat digunakan sebagai wadah untuk menampung segala inovasi dan ide
-            - ide dari para mahasiswa/i yang tentunya sangat beragam.
+            Competition 2024 ini yaitu “Transformative UI/UX Design for Film 
+            Services Platform”, yang menunjukkan lomba ini diharapkan para mahasiswa 
+            dapat menciptakan tampilan dan sistem yang menarik mengenai platform VOD (Video on Demand).
           </div>
 
           {/* <div className="slider-wrapper">
@@ -123,7 +126,7 @@ const MUC: FC = () => {
                 </Dialog.Panel>
               </div>
             </Dialog>
-            <a href="/dash" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#42B54C] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#F4347F]">
+            <a href="https://bit.ly/Pendaftaran_MUC_2024" rel="noreferrer" target="_blank" className="flex justify-center gap-4 items-center font-bold rounded-full bg-[#42B54C] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#42B54C]">
               <div className="text-white font-bold">Daftar</div>
               <img className="vector" src="images/Vector 9.svg" />
             </a>
@@ -188,7 +191,7 @@ const MUC: FC = () => {
                 </li>
                 <li>
                   Melakukan pendaftaran online melalui
-                  <a href="https://ifest.uajy.ac.id/dash/" target="_blank" className="text-[#FF8D44] hover:text-[#B18D44]"> https://ifest.uajy.ac.id/dash/</a>, pendaftaran akan dibuka mulai 19
+                  <a href="https://bit.ly/Pendaftaran_MUC_2024" target="_blank" className="text-[#FF8D44] hover:text-[#B18D44]"> https://bit.ly/Pendaftaran_MUC_2024</a>, pendaftaran akan dibuka mulai 19
                   Februari 2024 sampai dengan 18 Maret 2024 pukul 23.59 WIB.
                 </li>
                 <li>
@@ -229,7 +232,7 @@ const MUC: FC = () => {
                 <li>
                   Peserta yang telah mendaftar wajib mengumpulkan file deskripsi
                   fungsi dan prototype Mobile UI/UX menjadi satu file PDF
-                  melalui <a href="https://ifest.uajy.ac.id/dash/" target="_blank" className="text-[#FF8D44] hover:text-[#B18D44]"> https://ifest.uajy.ac.id/dash/</a>
+                  melalui <a href="https://bit.ly/Berkas_MUC" target="_blank" className="text-[#FF8D44] hover:text-[#B18D44]"> https://bit.ly/Berkas_MUC</a>
                 </li>
                 <li>
                   File PDF yang dikumpulkan berisi deskripsi fungsi disertai
@@ -341,7 +344,7 @@ const MUC: FC = () => {
             <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>
           <div className="text-white font-montserrat text-2xl lg:text-3xl font-bold">
-            Rp5.000.000,00
+            Rp4.000.000,00
           </div>
 
           <div className="flex flex-col lg:flex-row lg:justify-between w-2/3 lg:items-end py-12 gap-12">
@@ -422,7 +425,7 @@ const MUC: FC = () => {
               informasi? Ayo, jangan lewatkan kesempatan <br /> untuk
               menunjukkan kreativitas dan keahlianmu di IFEST #12! 🌐
             </p>
-            <a href="/dash" rel="noreferrer" target="_blank">
+            <a href="https://bit.ly/Pendaftaran_MUC_2024" rel="noreferrer" target="_blank">
               <button className="flex items-center gap-4 rounded-full bg-[#42B54C] transition-all hover:scale-105 hover:shadow-[0_0px_80px_0px_#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
                 <div className="text-white text-xl font-bold">Daftar</div>
                 <img className="vector" src="images/Vector 9.svg" />

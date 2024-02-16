@@ -3,7 +3,6 @@ import {
   Navbar,
   Collapse,
   Typography,
-  Button,
   IconButton,
   List,
   ListItem,
@@ -195,7 +194,7 @@ const NavBar: FC<Color> = (props: Color) => {
             <NavList bg1={props.bg1} bg2={props.bg2} fg={props.fg}/>
           </div>
           <div className="hidden lg:flex">
-            <a href="/dash">
+            {/* <a href="/dash">
               <Button 
                 size="lg" 
                 placeholder={undefined}
@@ -204,7 +203,7 @@ const NavBar: FC<Color> = (props: Color) => {
               >
                 Dashboard
               </Button>
-            </a>
+            </a> */}
         </div>
         </div>
         <IconButton
@@ -223,7 +222,7 @@ const NavBar: FC<Color> = (props: Color) => {
       </div>
       <Collapse className="" open={openNav} style={{backgroundColor: props.bg1}}>
         <NavList bg1={props.bg1} bg2={props.bg2} fg={props.fg}/>
-        <div className="flex w-full ml-12 pl-3 mb-8 flex-nowrap items-center gap-2 lg:hidden">
+        {/* <div className="flex w-full ml-12 pl-3 mb-8 flex-nowrap items-center gap-2 lg:hidden">
           <a href="/dash">
             <Button 
               size="lg" 
@@ -235,7 +234,7 @@ const NavBar: FC<Color> = (props: Color) => {
               Dashboard
             </Button>
           </a>
-        </div>
+        </div> */}
       </Collapse>
     </Navbar>
   );
