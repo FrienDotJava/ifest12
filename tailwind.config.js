@@ -12,6 +12,7 @@ export default withMT({
       fontFamily: {
         brokenConsole: ["Broken Console", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        billy: ["Billy-Light", "sans-serif"],
       }
     },
   },

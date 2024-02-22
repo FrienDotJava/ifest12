@@ -31,10 +31,26 @@ const CPCarousel: FC = () => {
       "no1":"81393776678",
       "no2":"82228198418"
     },
+    {
+      "event":"SPONSOR",
+      "bg":"#3f9e95",
+      "person1":"Ryan",
+      "person2":"Arya",
+      "no1":"87794005230",
+      "no2":"82136297790"
+    },
+    {
+      "event":"IFEST STORE",
+      "bg":"#60458A",
+      "person1":"Amel",
+      "person2":"Zelika",
+      "no1":"81210957534",
+      "no2":"81914466777"
+    },
   ];
   return (
     <div className="flex flex-col justify-start items-center h-fit pb-12 bg-[#3483A2]">
-      <div className="mt-12 flex mx-8 lg:mx-0 flex-row justify-center items-center gap-4">
+      <div className="mt-20 flex mx-8 lg:mx-0 flex-row justify-center items-center gap-4 -mb-14">
         <img src="images/star.webp" alt="star-img" className="w-12"/>
         <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white text-center">CONTACT PERSON</div>
         <img src="images/star.webp" alt="star-img" className="w-12"/>
@@ -56,11 +72,11 @@ const CPCarousel: FC = () => {
           pagination={{
             clickable: true,
           }}
-          spaceBetween={8}
+          spaceBetween={0}
         >
           {CPdata.map((data) => {
             return(
-              <SwiperSlide className="h-[25rem] px-24 lg:px-10">
+              <SwiperSlide className="h-[26rem] px-24 lg:px-10">
                 <CP event={data.event} bg={data.bg} person1={data.person1} person2={data.person2} no1={data.no1} no2={data.no2}/>
               </SwiperSlide>
             );

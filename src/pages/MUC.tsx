@@ -88,20 +88,6 @@ const MUC: FC = () => {
             dapat menciptakan tampilan dan sistem yang menarik mengenai platform VOD (Video on Demand).
           </div>
 
-          {/* <div className="slider-wrapper">
-            <div className="slider">
-              <img src="images/forest - Salin.jpg" id="slide1" />
-              <img src="images/city.jpg" id="slide2" />
-              <img src="images/village.jpg" id="slide3" />
-            </div>
-
-            <div className="slider-nav">
-              <a href="#slide1"></a>
-              <a href="#slide2"></a>
-              <a href="#slide3"></a>
-            </div>
-          </div> */}
-
           <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
             <button
               onClick={() => setOpenPoster(true)}
@@ -121,7 +107,7 @@ const MUC: FC = () => {
                     alt="poster"
                     className="h-full w-full object-contain object-center"
                     onClick={() => setOpenPoster(false)}
-                    src="images/poster/poster-i2c.webp"
+                    src="images/poster/poster-muc.webp"
                   />
                 </Dialog.Panel>
               </div>
@@ -147,7 +133,7 @@ const MUC: FC = () => {
                   <iframe
                     className="h-screen w-full py-10"
                     onClick={() => setOpenRulebook(false)}
-                    src="documents/rulebook-i2c.pdf"
+                    src="documents/rulebook-muc.pdf"
                   ></iframe>
                 </Dialog.Panel>
               </div>

@@ -12,6 +12,11 @@
   src: url("/fonts/Montserrat.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Billy-Light";
+  src: url("/fonts/Billy-Light.ttf") format("truetype");
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

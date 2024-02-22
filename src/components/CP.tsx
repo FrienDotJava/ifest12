@@ -15,8 +15,8 @@ const CP: FC<Props> = (props : Props) => {
     <div className="flex justify-center items-center text-white p-8 mt-12">
       <div className={`flex flex-col justify-center items-center p-8 rounded-xl`} style={{backgroundColor: props.bg}}>
         <div className="flex gap-2 items-center pb-6">
-          <div className="font-brokenConsole text-2xl lg:text-3xl">{props.event}</div>
-          <img src="/images/computer.webp" alt="computer-img" />
+          <div className={`font-brokenConsole text-2xl ${props.event === "SPONSOR" ? "lg:text-xl" : "lg:text-3xl"}`}>{props.event}</div>
+          <img src="/images/computer.webp" alt="computer-img"/>
         </div>
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="flex flex-col justify-center items-center">

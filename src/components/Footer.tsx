@@ -92,7 +92,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
   return (
     <>
       <div
-        className={`${className} grid justify-center gap-3 px-6 pb-4 pt-10 lg:grid-cols-7 lg:gap-8 lg:px-8`}
+        className={`${className} grid justify-center gap-3 px-6 pb-4 pt-10 lg:grid-cols-6 lg:gap-8 lg:px-8`}
       >
         <motion.div
           animate={{ opacity: 1 }}
@@ -141,7 +141,7 @@ const Footer: FC<Props> = ({ className }: Props) => {
           );
         })}
         <div className="col-span-full border-t-2 border-black/20" />
-        <div className="col-span-full text-center font-retroica text-sm text-white opacity-80">
+        <div className="col-span-full text-center font-montserrat text-sm text-white/40 opacity-80">
           2024 Design by WD IFest#12
         </div>
       </div>

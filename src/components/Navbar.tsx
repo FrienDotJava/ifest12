@@ -151,6 +151,18 @@ const NavList: FC<Color> = (props:Color) => {
           Sponsor
         </ListItem>
       </Typography>
+      <Typography
+        as="a"
+        href="/store"
+        variant="paragraph"
+        placeholder={undefined} 
+        className={`font-brokenConsole font-semibold`}  
+        style={{color: props.fg}}
+      >
+        <ListItem className={`flex items-center gap-2 pr-4 hover:bg-[${props.bg2}] hover:text-white focus:bg-[${props.bg2}] focus:text-white active:bg-[${props.bg2}] active:text-white`} placeholder={undefined}>
+          IFest Store
+        </ListItem>
+      </Typography>
     </List>
   );
 };
