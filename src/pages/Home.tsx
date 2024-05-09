@@ -230,9 +230,9 @@ const Home: FC = () => {
             <div className="font-montserrat text-justify">
               Web Development Competition (WDC) 2024 merupakan sebuah kompetisi
               penciptaan/perancangan sistem serta desain visual informasi
-              digital yang ditampilkan dalam situs web. Web Development Competition
-              (WDC) 2024 mengangkat tema "Exploring Indonesia With The Power of
-              Technology"
+              digital yang ditampilkan dalam situs web. Web Development
+              Competition (WDC) 2024 mengangkat tema "Exploring Indonesia With
+              The Power of Technology"
             </div>
             <a
               href="/wdc"
@@ -287,15 +287,49 @@ const Home: FC = () => {
             </a>
           </div>
         </div>
-        {/* <div className="flex flex-col justify-start items-center h-screen bg-[#cfe6fa]">
-          <div className="mt-12 mx-8 lg:mx-0 flex flex-row justify-center items-center gap-4">
-            <img src="images/star.webp" alt="star-img" className="w-12" />
-            <div className="font-brokenConsole font-bold text-2xl lg:text-3xl text-[#2D678C] text-center">
-              SEMINAR NASIONAL
+        <div className="flex flex-col lg:flex-row justify-start items-center h-fit bg-[#cfe6fa] py-20 text-[#2D678C] px-12 gap-3 lg:gap-8">
+          <img
+            src="/images/kompetisi/semnas-pic.webp"
+            alt="wdc"
+            className="w-9/12 lg:w-1/2 lg:order-last"
+          />
+          <div className="flex flex-col justify-center items-center lg:items-start">
+            <div className="font-brokenConsole font-bold text-4xl lg:text-5xl text-center">
+              SEMNAS
             </div>
-            <img src="images/star.webp" alt="star-img" className="w-12" />
+            <div className="font-montserrat text-2xl lg:text-3xl font-bold text-center lg:text-left">
+              Seminar Nasional IFEST #12 2024
+            </div>
+            <div className="flex flex-col flex-wrap gap-2 py-4 text-center text-sm text-white justify-start lg:w-full lg:flex-row lg:gap-4 lg:px-0">
+              <div className="items-center text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Mahasiswa / Umum
+              </div>
+              <div className="items-center text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Seminar
+              </div>
+              <div className="items-center text-base font-bold rounded-full bg-[#42B54C] p-2 lg:flex-row lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat">
+                Gratis / 10k Luar Mahasiswa ATMA
+              </div>
+            </div>
+            <div className="font-montserrat text-justify">
+              Panitia IFEST#12 mengadakan Seminar Nasional untuk mahasiswa dan
+              masyarakat tentang Technology Beyond Borders: Building Bridge of
+              Innovation Across Sectors. Penjelasan materi dari pemateri secara
+              rinci mengenai materi yang berhubungan. Terdapat sesi tanya jawab
+              dimana peserta dapat bertanya secara langsung kepada pemateri
+              seputar materi yang disampaikan.
+            </div>
+            <a
+              href="/semnas"
+              rel="noreferrer"
+              target="_blank"
+              className="mt-8 flex justify-center gap-4 items-center font-bold rounded-full bg-[#42B54C] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#42B54C]"
+            >
+              <div className="text-white font-bold">Read more</div>
+              <img className="vector" src="images/Vector 9.svg" />
+            </a>
           </div>
-        </div> */}
+        </div>
         <div className="flex flex-col justify-start items-center h-fit bg-gradient-to-b from-[#cfe6fa] to-[#739AB3]">
           {/* <Sponsor /> */}
           <MediaPartner />

@@ -24,13 +24,14 @@ function App() {
         <Route path="/i2c" element={<I2C />} />
         <Route path="/wdc" element={<WDC />} />
         <Route path="/muc" element={<MUC />} />
-        <Route path="/semnas" element={current.getTime() >= semnasDate.getTime() ? <SemNas /> : <UnderDevelopment />} />
+        <Route path="/semnas" element={<SemNas />} />
+        {/* <Route path="/semnas" element={current.getTime() >= semnasDate.getTime() ? <SemNas /> : <UnderDevelopment />} /> */}
         <Route path="/sponsor" element={<Sponsor />} />
         <Route path="/store" element={<Store />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </AnimatePresence>
-  )
+  );
 }
 
 export default App
