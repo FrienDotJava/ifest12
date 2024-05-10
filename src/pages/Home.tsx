@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Transition from "../components/Transition";
-// import Sponsor from "../components/Sponsor";
+import Sponsor from "../components/Sponsor";
 import MediaPartner from "../components/MediaPartner";
 import FAQ from "../components/FAQ";
 import CPCarousel from "../components/CPCarousel";
@@ -297,7 +297,7 @@ const Home: FC = () => {
           </div>
         </div> */}
         <div className="flex flex-col justify-start items-center h-fit bg-gradient-to-b from-[#cfe6fa] to-[#739AB3]">
-          {/* <Sponsor /> */}
+          <Sponsor />
           <MediaPartner />
         </div>
         <FAQ />

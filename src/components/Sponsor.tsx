@@ -9,23 +9,33 @@ const Sponsor: FC = () => {
     {
       "id": 1,
       "name": "Jagoan Hosting",
-      "image": "/images/sponsors/ifest10/jagoan-hosting.webp"
+      "image": "/images/sponsors/ifest12/jagoan-hosting.webp",
+      "link": "https://www.jagoanhosting.com/"
     },
     {
       "id": 2,
-      "name": "Ajaib",
-      "image": "/images/sponsors/ifest10/ajaib.webp"
+      "name": "Cakap",
+      "image": "/images/sponsors/ifest12/cakap.webp",
+      "link": ""
     },
     {
       "id": 3,
-      "name": "DevCode",
-      "image": "/images/sponsors/ifest10/devcode.webp"
+      "name": "DIY Kamera",
+      "image": "/images/sponsors/ifest12/diy-kamera.webp",
+      "link": ""
     },
     {
       "id": 4,
-      "name": "Dewaweb",
-      "image": "/images/sponsors/ifest11/dewaweb.webp"
-    }
+      "name": "Inperial",
+      "image": "/images/sponsors/ifest12/inperial.webp",
+      "link": ""
+    },
+    {
+      "id": 4,
+      "name": "IFrame",
+      "image": "/images/sponsors/ifest12/iframe.webp",
+      "link": ""
+    },
   ];
   return (
     <div className="mt-12 flex flex-row justify-center items-center gap-4">
@@ -49,7 +59,9 @@ const Sponsor: FC = () => {
                   className="flex !h-64 !w-64 items-center rounded-lg bg-[#3483A2] p-2"
                   key={sponsor.id}
                 >
-                  <img alt={sponsor.name} src={sponsor.image} />
+                  <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+                    <img alt={sponsor.name} src={sponsor.image} />
+                  </a>
                 </SwiperSlide>
               );
             })}
@@ -78,7 +90,9 @@ const Sponsor: FC = () => {
                   className="flex !h-[19rem] !w-[19rem] items-center bg-[#3483A2] p-8"
                   key={sponsor.id}
                 >
-                  <img alt={sponsor.name} src={sponsor.image} />
+                  <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+                    <img alt={sponsor.name} src={sponsor.image} />
+                  </a>
                 </SwiperSlide>
               );
             })}

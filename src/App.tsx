@@ -15,7 +15,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
-  const semnasDate = new Date("2024-04-01");
+  const semnasDate = new Date("2024-06-1");
   const current = new Date();
   return (
     <AnimatePresence>
