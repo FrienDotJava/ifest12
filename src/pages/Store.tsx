@@ -48,8 +48,8 @@ const Store: FC = () => {
                 </div>
                 <div className="detail flex flex-col gap-2">
                   <div className="flex justify-center items-center">
-                    <div className="mt-3 font-montserrat rounded-full bg-[#8637C6] text-white px-8 py-1 text-2xl font-bold">
-                      Rp60.000,-
+                    <div className="mt-3 font-montserrat rounded-full bg-[#E43343] text-white px-8 py-1 text-2xl font-bold">
+                      SOLD
                     </div>
                   </div>
                   <div className="flex flex-col flex-wrap gap-2 px-10 py-4 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
@@ -87,8 +87,8 @@ const Store: FC = () => {
                 </div>
                 <div className="detail flex flex-col gap-2">
                   <div className="flex justify-center items-center">
-                    <div className="mt-3 font-montserrat rounded-full bg-[#8637C6] text-white px-8 py-1 text-2xl font-bold">
-                      Rp3.000,-
+                    <div className="mt-3 font-montserrat rounded-full bg-[#E43343] text-white px-8 py-1 text-2xl font-bold">
+                      SOLD
                     </div>
                   </div>
                 </div>
@@ -104,8 +104,8 @@ const Store: FC = () => {
                 </div>
                 <div className="detail flex flex-col gap-2">
                   <div className="flex justify-center items-center">
-                    <div className="mt-3 font-montserrat rounded-full bg-[#8637C6] text-white px-8 py-1 text-2xl font-bold">
-                      Rp6.000,-
+                    <div className="mt-3 font-montserrat rounded-full bg-[#E43343] text-white px-8 py-1 text-2xl font-bold">
+                      SOLD
                     </div>
                   </div>
                   <div className="flex flex-col flex-wrap gap-2 px-5 py-2 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
@@ -135,8 +135,8 @@ const Store: FC = () => {
                 </div>
                 <div className="detail flex flex-col gap-2">
                   <div className="flex justify-center items-center">
-                    <div className="mt-3 font-montserrat rounded-full bg-[#8637C6] text-white px-8 py-1 text-2xl font-bold">
-                      Rp15.000,-
+                    <div className="mt-3 font-montserrat rounded-full bg-[#E43343] text-white px-8 py-1 text-2xl font-bold">
+                      SOLD
                     </div>
                   </div>
                   <div className="flex flex-col flex-wrap gap-2 px-5 py-2 text-center text-sm text-white justify-center lg:w-full lg:flex-row lg:gap-6 lg:px-0">
@@ -168,9 +168,9 @@ const Store: FC = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSeqUQuFuW9HalOm7GgXvnkXGdY4jcSv9_tv2eKmID5P0jh6JA/viewform"
               rel="noreferrer"
               target="_blank"
-              className="flex justify-center gap-4 items-center font-bold rounded-full bg-white p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#FFFFFF]"
+              className="flex justify-center gap-4 items-center font-bold rounded-full bg-[white] p-2 lg:text-sm lg:tracking-wide px-5 py-3 font-montserrat hover:scale-105 hover:shadow-[0_0px_15px_0px_#FFFFFF]"
             >
-              <div className="text-[#003150] font-bold">Pesan melalui form</div>
+              <div className="text-[#E43343] font-bold">CLOSE</div>
               <svg
                 width="7"
                 height="15"
@@ -223,7 +223,7 @@ const Store: FC = () => {
             no2="81914466777"
           />
         </section>
-        
+
         <Footer className="bg-[#8683CA]" />
       </div>
     </Transition>
