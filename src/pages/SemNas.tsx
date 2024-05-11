@@ -16,8 +16,6 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import { FaCertificate, FaMoneyBill, FaTrophy } from "react-icons/fa";
-
 const timelineItems = [
   {
     title: "Pendaftaran",
@@ -224,7 +222,7 @@ const SemNas: FC = () => {
           <div className="flex justify-center items-center gap-3 pt-16 pb-4">
             <img src="images/star.webp" alt="star-img" className="w-12" />
             <h2 className="font-brokenConsole font-bold text-2xl lg:text-3xl text-white">
-              TIMELINE I2C
+              INFORMASI SEMINAR NASIONAL
             </h2>
             <img src="images/star.webp" alt="star-img" className="w-12" />
           </div>

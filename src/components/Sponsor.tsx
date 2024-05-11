@@ -31,9 +31,27 @@ const Sponsor: FC = () => {
       "link": ""
     },
     {
-      "id": 4,
-      "name": "IFrame",
-      "image": "/images/sponsors/ifest12/iframe.webp",
+      "id": 5,
+      "name": "AccAstra",
+      "image": "/images/sponsors/ifest12/accAstra.webp",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "name": "Berijalan",
+      "image": "/images/sponsors/ifest12/berijalanAstra.webp",
+      "link": ""
+    },
+    {
+      "id": 5,
+      "name": "Fourtrezz",
+      "image": "/images/sponsors/ifest12/fourtrezz.webp",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "name": "Intelligo",
+      "image": "/images/sponsors/ifest12/intelligo.webp",
       "link": ""
     },
   ];
